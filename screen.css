@@ -1,0 +1,23 @@
+nav h1 {
+  float: left;
+}
+nav ul {
+  float: right;
+  margin-top: 20px;
+}
+nav ul li {
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+nav ul li a:hover {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+main div {
+  border-top: solid 1px black;
+}
+
+/*# sourceMappingURL=screen.css.map */
