@@ -1,21 +1,46 @@
+$margin : 10px;
+$width : 350px;
+$img-width:180px;
+$img-height:140px;
+$margin-thumbnail:10px;
+$accent:#ffcf00;
 
+header{
+   // background-color: $accent;
+    height: 65px;
+    z-index: -1;
+}
 nav{
     
+    img{
+        max-width:115px ;
+        max-height:115px;
+        margin-left: 5px; 
+        top: -20px;
+        position: absolute;
+    }
     h1{
         float: left;
-
     }
     ul{
-
         float: right;
         margin-top: 20px; 
          li{
+        background-image: url(image/legobrick.png);
+        //background-color: yellow;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         list-style-type: none;
+        padding:12px;
         float:left ;
-        margin-left: 10px;
-        font-size: 1.2rem; 
+        margin-left: 12px;
+        font-size: 1.2rem;
+        color: black; 
+            a{
+                color:black;
+            }
             a:hover{
-                font-size: 1.5rem;
                 text-decoration: none;
             }
         }
@@ -23,8 +48,50 @@ nav{
 
 }
 main{
-    div{
-        border-top: solid 1px black;
+    div#moc{
+        h2{
+            text-align: center;
+            margin-top: $margin;
+        }
+        div.row a img{
+            margin-top: $margin;
+            max-width: $img-width ;
+            max-height: $img-height;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+            &:nth-last-of-type(1){
+                margin-right:$margin-thumbnail ;
+            }
+        }
+        button{
+            margin-top: $margin;
+            background-color: #ffcf00;
+            font-size: 1.3rem;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    div.container  article{
+        //border: solid 1px black;
+        margin-top: $margin;
+        max-width: $width ;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: $margin;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+
+        &:first-child{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &:last-child{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &:hover{
+        }
         
     }
+    
 }

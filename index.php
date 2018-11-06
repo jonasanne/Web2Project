@@ -13,11 +13,12 @@
 <header>
 
 <nav class="container">
-<h1>Website</h1>
+<!-- <h1>Website</h1> -->
+<img src="image/minifig2.png" alt="">
 <ul>
     <li><a href="http://">Home</a></li>
     <li><a href="http://">Lego</a></li>
-    <li><a href="http://">Mijn Account</a></li>
+    <li><a href="http://">Lego</a></li>
 </ul>
 
 </nav>
@@ -25,7 +26,7 @@
 
 
 </header>
-    <main>
+<main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -51,6 +52,85 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+<div class="container" id="moc">
+  <h2>Moc's</h2>
+  <hr>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href="" ><img src="image/moc's/browser.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/bus.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/caravan.jpg" alt=""></a>
+    </div>
+     <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/castle.jpg" alt=""></a>
+    </div>
+     <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/clark.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/groot.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href="" ><img src="image/moc's/browser.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/bus.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/caravan.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/castle.jpg" alt=""></a>
+    </div >
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/clark.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/groot.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href="" ><img src="image/moc's/browser.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/bus.jpg" alt=""></a>
+    </div> 
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/caravan.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/castle.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/clark.jpg" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 col-condensed">
+    <a href=""><img src="image/moc's/groot.jpg" alt=""></a>  
+  </div>
+  </div>
+  <div class="margin-top-30 text-center">
+  <button type="button" class="btn btn-light"><a href="">Bekijk hier meer moc's!</a></button>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<article class="col-lg">
+<h2>Nieuwe Sets</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil velit corporis at debitis ducimus ullam, dolorem sequi nam eveniet sed quaerat tempore neque quis voluptate vel impedit illo iure.</p>
+</article>
+<article class="col-lg">
+<h2>Binnenkort beschikbaar</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in recusandae dignissimos nostrum obcaecati, repudiandae debitis, odit sequi at ut quod assumenda ea? Facere sint ipsum cumque doloremque labore assumenda.</p>
+</article>
+<article class="col-lg">
+<h2>In the spotlight</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, enim necessitatibus? Cupiditate quibusdam commodi labore perferendis natus dignissimos repellat nobis veritatis, officia assumenda vero aperiam nesciunt explicabo nostrum. Provident, incidunt.</p>
+</article>
+</div>
 </div>
     
     
