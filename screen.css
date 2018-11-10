@@ -1,14 +1,14 @@
 header {
-  height: 65px;
-  z-index: -1;
+  height: auto;
 }
 
-nav img {
+nav {
+  height: 100px;
+}
+nav #minifigure {
   max-width: 115px;
   max-height: 115px;
   margin-left: 5px;
-  top: -20px;
-  position: absolute;
 }
 nav h1 {
   float: left;
@@ -18,16 +18,17 @@ nav ul {
   margin-top: 20px;
 }
 nav ul li {
-  background-image: url(image/legobrick.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   list-style-type: none;
   padding: 12px;
   float: left;
-  margin-left: 12px;
+  margin-left: 20px;
   font-size: 1.2rem;
   color: black;
+}
+nav ul li img {
+  top: 20px;
+  height: auto;
+  max-width: 100px;
 }
 nav ul li a {
   color: black;
@@ -40,22 +41,29 @@ main div#moc h2 {
   text-align: center;
   margin-top: 10px;
 }
+main div#moc div.row > div {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
 main div#moc div.row a img {
   margin-top: 10px;
-  max-width: 180px;
-  max-height: 140px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
 }
-main div#moc div.row a img:nth-last-of-type(1) {
-  margin-right: 10px;
+main div#moc div.row a img:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
 }
 main div#moc button {
   margin-top: 10px;
-  background-color: #ffcf00;
   font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 main div#moc button a {
   text-decoration: none;
+  color: black;
 }
 main div.container article {
   margin-top: 10px;
@@ -72,6 +80,9 @@ main div.container article:first-child {
 main div.container article:last-child {
   margin-left: auto;
   margin-right: auto;
+}
+main div#carouselExampleIndicators {
+  top: -10px;
 }
 
 /*# sourceMappingURL=screen.css.map */
