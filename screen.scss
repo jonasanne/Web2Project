@@ -5,13 +5,9 @@ $img-height:140px;
 $margin-thumbnail:10px;
 $accent:#ffcf00;
 
-header {
-    // background-color: $accent;
-    height: auto;
-}
 
 nav {
-    height: 100px;
+    //height: 100px;
 
 
     #minifigure {
@@ -21,13 +17,10 @@ nav {
         //top: -20px;
     }
 
-    h1 {
-        float: left;
-    }
+    
 
     ul {
         float: right;
-        margin-top: 20px;
 
         li {
             //background-color: yellow;
@@ -35,7 +28,7 @@ nav {
             padding: 12px;
             float: left;
             margin-left: 20px;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: black;
 
             & img {

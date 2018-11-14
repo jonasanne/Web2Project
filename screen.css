@@ -1,28 +1,17 @@
-header {
-  height: auto;
-}
-
-nav {
-  height: 100px;
-}
 nav #minifigure {
   max-width: 115px;
   max-height: 115px;
   margin-left: 5px;
 }
-nav h1 {
-  float: left;
-}
 nav ul {
   float: right;
-  margin-top: 20px;
 }
 nav ul li {
   list-style-type: none;
   padding: 12px;
   float: left;
   margin-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: black;
 }
 nav ul li img {
