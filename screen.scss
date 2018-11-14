@@ -5,6 +5,7 @@ $img-height:140px;
 $margin-thumbnail:10px;
 $accent:#ffcf00;
 
+<<<<<<< HEAD
 body {
     color: #00ff00;
     cursor: pointer;
@@ -18,9 +19,11 @@ header {
     // background-color: $accent;
     height: auto;
 }
+=======
+>>>>>>> e8a5878a2a5debcc1244d6b99348491c8a87e6ce
 
 nav {
-    height: 100px;
+    //height: 100px;
 
 
     #minifigure {
@@ -30,13 +33,10 @@ nav {
         //top: -20px;
     }
 
-    h1 {
-        float: left;
-    }
+    
 
     ul {
         float: right;
-        margin-top: 20px;
 
         li {
             //background-color: yellow;
@@ -44,7 +44,7 @@ nav {
             padding: 12px;
             float: left;
             margin-left: 20px;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: black;
 
             & img {
