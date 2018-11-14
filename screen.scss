@@ -5,6 +5,15 @@ $img-height:140px;
 $margin-thumbnail:10px;
 $accent:#ffcf00;
 
+body {
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.zichtbaar {
+    color: #ff0000;
+}
+
 header {
     // background-color: $accent;
     height: auto;
@@ -132,4 +141,10 @@ main {
         top: -10px;
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+    main div#moc div.row>div {
+        width: 50%;
+    }
 }

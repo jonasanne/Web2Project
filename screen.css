@@ -1,3 +1,12 @@
+body {
+  color: #00ff00;
+  cursor: pointer;
+}
+
+.zichtbaar {
+  color: #ff0000;
+}
+
 header {
   height: auto;
 }
@@ -83,6 +92,12 @@ main div.container article:last-child {
 }
 main div#carouselExampleIndicators {
   top: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  main div#moc div.row > div {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
