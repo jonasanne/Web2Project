@@ -5,7 +5,6 @@ $img-height:140px;
 $margin-thumbnail:10px;
 $accent:#ffcf00;
 
-<<<<<<< HEAD
 body {
     color: #00ff00;
     cursor: pointer;
@@ -19,24 +18,23 @@ header {
     // background-color: $accent;
     height: auto;
 }
-=======
->>>>>>> e8a5878a2a5debcc1244d6b99348491c8a87e6ce
 
 nav {
-    //height: 100px;
+    height: 100px;
 
 
     #minifigure {
         max-width: 115px;
         max-height: 115px;
-        margin-left: 5px;
         //top: -20px;
+        float: left;
     }
 
-    
+
 
     ul {
-        float: right;
+        float: left;
+        margin-top: 20px;
 
         li {
             //background-color: yellow;
@@ -132,7 +130,7 @@ main {
             margin-right: auto;
         }
 
-        &:hover {}
+
 
     }
 
@@ -146,5 +144,11 @@ main {
 @media only screen and (max-width: 768px) {
     main div#moc div.row>div {
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    nav {
+        height: 100%;
     }
 }

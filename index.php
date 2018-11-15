@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+<link rel="stylesheet" href="screen.css">
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<head>
-<link rel="stylesheet" href="screen.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
 </head>
-<<<<<<< HEAD
 <body id="body">
 <header>
-=======
-<body>
 <div class="container">
->>>>>>> e8a5878a2a5debcc1244d6b99348491c8a87e6ce
+<nav>
+<div>
+<img src="image/minifig2.png" id="minifigure" alt="">
+<ul>
 
-  <nav class="navbar navbar-expand-lg  ">
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-  <span class="navbar-toggler-icon"></span>
-  </button>
+  <li>Home</li>
+  <li>Moc's</li>
+  <li>Account</li>
+</ul>
 
-  <div class="collapse navbar-collapse" id="collapse_target">
-  <a href="" class="navbar-brand"><img src="image/minifig2.png" alt="" id="minifigure"></a>
-    <ul class="nabar-nav">
-      <li class="nav-item"><a href="">Home</a></li>
-      <li class="nav-item"><a href="">Moc's</a></li>
-    </ul>
-    </div>
-    </nav>
-    </div>
+</div>
 
 
+
+
+</nav>
+</div>
 <main>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
