@@ -1,12 +1,3 @@
-body {
-  color: #00ff00;
-  cursor: pointer;
-}
-
-.zichtbaar {
-  color: #ff0000;
-}
-
 header {
   height: auto;
 }
@@ -30,6 +21,8 @@ nav ul li {
   margin-left: 20px;
   font-size: 1.5rem;
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 nav ul li img {
   top: 20px;
@@ -91,6 +84,17 @@ main div#carouselExampleIndicators {
   top: -10px;
 }
 
+main#moc div.accent {
+  background-color: #0088ff;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: -15px;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   main div#moc div.row > div {
     width: 50%;
@@ -99,6 +103,36 @@ main div#carouselExampleIndicators {
 @media only screen and (max-width: 995px) {
   nav {
     height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #minifigure {
+    display: none;
+  }
+
+  div#nav {
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+  }
+  nav ul li {
+    float: none;
+    width: 50%;
+  }
+
+  main div#carouselExampleIndicators {
+    top: 0;
   }
 }
 

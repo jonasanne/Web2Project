@@ -15,25 +15,7 @@
     <title>index</title>
 </head>
 <body id="body">
-<header>
-<div class="container">
-<nav>
-<div>
-<img src="image/minifig2.png" id="minifigure" alt="">
-<ul>
-
-  <li>Home</li>
-  <li>Moc's</li>
-  <li>Account</li>
-</ul>
-
-</div>
-
-
-
-
-</nav>
-</div>
+<?php include ("include/header.php"); ?>
 <main>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
