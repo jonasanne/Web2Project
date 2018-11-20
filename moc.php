@@ -12,14 +12,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+       <title>index</title>
 </head>
 <body id="body">
 <?php include ("include/header.php"); ?>
 
 <main id="moc">
-<div class="accent"><h2>Moc's</h2></div>
+    <span class="new-moc"> <h2>MOCs</h2> <hr class="container"></span>
 <div class="container" id="moc">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="image/moc's/browser.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">title moc</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
   
     </main>
 

@@ -1,44 +1,58 @@
-$margin : 10px;
+$margin : 25px;
 $width : 350px;
 $img-width:180px;
 $img-height:140px;
 $margin-thumbnail:10px;
-$accent:#0088ff;
+$font:'Lora', serif;
 
 
+$taupe:#473335;
+$wintergreen:#548687;
+$paleyellow:#FFFFC7;
+$carmine-red:#B0413E;
+$rajah:#FCAA67;
+
+body{
+    margin: 0;
+    padding: 0;
+}
 header {
     // background-color: $accent;
     height: auto;
+    #minifigure {
+        max-width: 110px;
+        max-height: 110px;
+        //top: -20px;
+        position: relative;
+    }
+    
 }
+
 
 nav {
     height: 100px;
-
-
-    #minifigure {
-        max-width: 115px;
-        max-height: 115px;
-        //top: -20px;
-        float: left;
-    }
-
-
+    display: flex!important;
+    background-color: $taupe;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
 
     ul {
-        float: left;
-        margin-top: 20px;
-
+        margin: 0;
         li {
             //background-color: yellow;
             list-style-type: none;
-            padding: 12px;
             float: left;
-            margin-left: 20px;
             font-size: 1.5rem;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+            padding: 0.9rem;
+            color: $paleyellow;
+            font-family: $font;
 
+            font-weight: bold;
+            transition: 0.2s;
+            &:hover{
+                background-color: $carmine-red;
+            }
 
             & img {
                 top: 20px;
@@ -48,7 +62,10 @@ nav {
             }
 
             a {
-                color: black;
+                color: $paleyellow;
+                &:hover{
+                    color: $wintergreen;
+                }
             }
 
             a:hover {
@@ -129,23 +146,28 @@ main {
 
     }
 
-    div#carouselExampleIndicators {
-        //margin-top: 20px;
-        top: -10px;
-    }
+    
 
 }
 main#moc{
-    div.accent{
-        background-color:$accent;
-        display: flex;
-        height: 100%;
-        width: 100%;
-        top: -15px;
-        position: relative;
-        justify-items: center;
-        align-items: center;
+    .new-moc{
+        h2{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            margin-top: $margin;
+            font-family: $font;
+            font-weight: bold;
+        }
     }
+   .card{
+       margin-top: $margin;
+   }
+   hr{
+       margin-top: 0;
+       background: $carmine-red;
+       
+   }
 
 }
 
