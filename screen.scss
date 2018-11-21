@@ -76,7 +76,7 @@ nav {
 
 }
 
-main {
+main#home {
     div#moc {
         h2 {
             text-align: center;
@@ -160,9 +160,25 @@ main#moc{
             font-weight: bold;
         }
     }
-   .card{
-       margin-top: $margin;
-   }
+    div.container{
+        div.row{
+            
+            .card{
+                //margin-top: $margin;
+                box-sizing: border-box;
+                max-width: 250px;
+                margin:  0 auto;
+                margin-bottom: $margin;
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }                
+            }
+        }
+    }
+   
    hr{
        margin-top: 0;
        background: $carmine-red;
@@ -172,9 +188,17 @@ main#moc{
 }
 
 @media only screen and (max-width: 768px) {
-    main div#moc div.row>div {
-        width: 50%;
+    
+    main#mox{
+        div.container{
+            div.row{
+                .card{
+                    
+                }
+            }
+        }
     }
+
 }
 
 @media only screen and (max-width: 995px) {
@@ -193,6 +217,12 @@ main#moc{
     nav{
         display: flex;
         justify-content: center;
+        div.container{
+            margin:0;
+            padding: 0;
+
+    
+        }
         ul{
             float: none;
             display: flex;
@@ -200,19 +230,22 @@ main#moc{
             align-items: center;
             justify-items: center;
             margin: 0;
-
+            padding: 0;
             
 
             li{
                 float: none;
-                width: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 
             }
         }
     }
     main div#carouselExampleIndicators {
         //margin-top: 20px;
-        top: 0;
+        display: none;
     }
     
 }

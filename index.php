@@ -18,7 +18,7 @@
 </head>
 <body id="body">
 <?php include ("include/header.php"); ?>
-<main>
+<main id="home">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -93,18 +93,7 @@
 </div>
 <div class="container">
 <div class="row">
-<article class="col-lg">
-<h2>Nieuwe Sets</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil velit corporis at debitis ducimus ullam, dolorem sequi nam eveniet sed quaerat tempore neque quis voluptate vel impedit illo iure.</p>
-</article>
-<article class="col-lg">
-<h2>Binnenkort beschikbaar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in recusandae dignissimos nostrum obcaecati, repudiandae debitis, odit sequi at ut quod assumenda ea? Facere sint ipsum cumque doloremque labore assumenda.</p>
-</article>
-<article class="col-lg">
-<h2>In the spotlight</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, enim necessitatibus? Cupiditate quibusdam commodi labore perferendis natus dignissimos repellat nobis veritatis, officia assumenda vero aperiam nesciunt explicabo nostrum. Provident, incidunt.</p>
-</article>
+
 </div>
 </div>
     

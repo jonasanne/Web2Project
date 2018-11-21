@@ -51,35 +51,35 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-main div#moc h2 {
+main#home div#moc h2 {
   text-align: center;
   margin-top: 25px;
 }
-main div#moc div.row > div {
+main#home div#moc div.row > div {
   width: auto;
   height: auto;
   margin: auto;
 }
-main div#moc div.row a img {
+main#home div#moc div.row a img {
   margin-top: 25px;
   width: 100%;
   height: auto;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
 }
-main div#moc div.row a img:hover {
+main#home div#moc div.row a img:hover {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
 }
-main div#moc button {
+main#home div#moc button {
   margin-top: 25px;
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
-main div#moc button a {
+main#home div#moc button a {
   text-decoration: none;
   color: black;
 }
-main div.container article {
+main#home div.container article {
   margin-top: 25px;
   max-width: 350px;
   border-radius: 15px;
@@ -87,11 +87,11 @@ main div.container article {
   margin-bottom: 25px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
-main div.container article:first-child {
+main#home div.container article:first-child {
   margin-left: auto;
   margin-right: auto;
 }
-main div.container article:last-child {
+main#home div.container article:last-child {
   margin-left: auto;
   margin-right: auto;
 }
@@ -104,19 +104,21 @@ main#moc .new-moc h2 {
   font-family: "Lora", serif;
   font-weight: bold;
 }
-main#moc .card {
-  margin-top: 25px;
+main#moc div.container div.row .card {
+  box-sizing: border-box;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+main#moc div.container div.row .card a img {
+  width: 100%;
+  height: auto;
 }
 main#moc hr {
   margin-top: 0;
   background: #B0413E;
 }
 
-@media only screen and (max-width: 768px) {
-  main div#moc div.row > div {
-    width: 50%;
-  }
-}
 @media only screen and (max-width: 995px) {
   nav {
     height: 100%;
@@ -135,6 +137,10 @@ main#moc hr {
     display: flex;
     justify-content: center;
   }
+  nav div.container {
+    margin: 0;
+    padding: 0;
+  }
   nav ul {
     float: none;
     display: flex;
@@ -142,14 +148,18 @@ main#moc hr {
     align-items: center;
     justify-items: center;
     margin: 0;
+    padding: 0;
   }
   nav ul li {
     float: none;
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   main div#carouselExampleIndicators {
-    top: 0;
+    display: none;
   }
 }
 

@@ -14,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>index</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <title>index</title>
 </head>
 <body id="body">
 <img src="image/under_con.jpg" alt="" class="img-fluid">

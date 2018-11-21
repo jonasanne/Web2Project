@@ -22,14 +22,39 @@
 <main id="moc">
     <span class="new-moc"> <h2>MOCs</h2> <hr class="container"></span>
 <div class="container" id="moc">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="image/moc's/browser.jpg" alt="Card image cap">
+<div class="row">
+<div class="card col-lg-3 col-md-4 col-sm-6" style="">
+  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
   <div class="card-body">
-    <h5 class="card-title">title moc</h5>
+  <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+<div class="card col-lg-3 col-md-4 col-sm-6" style="">
+  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card col-lg-3 col-md-4 col-sm-6" style="">
+  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card col-lg-3 col-md-4 col-sm-6" style="">
+  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+</div>
+</div>
+
   
     </main>
 
