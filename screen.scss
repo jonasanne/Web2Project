@@ -13,9 +13,28 @@ $carmine-red:#B0413E;
 $rajah:#FCAA67;
 
 body{
+    header{
+        nav{
+            div.container{
+                 button{
+                    span{
+                        color: $paleyellow;
+                }
+            }
+        }
+
+    }
+}
     margin: 0;
     padding: 0;
 }
+.container-fluid{
+    max-width: 1200px;
+}
+.navbar{
+    padding: 0!important;
+}
+
 header {
     // background-color: $accent;
     height: auto;
@@ -36,6 +55,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     height: auto;
+    padding: 0;
 
     ul {
         margin: 0;
@@ -78,6 +98,7 @@ nav {
 
 main#home {
     div#moc {
+        
         h2 {
             text-align: center;
             margin-top: $margin;
@@ -150,6 +171,7 @@ main#home {
 
 }
 main#moc{
+    
     .new-moc{
         h2{
             display: flex;
@@ -186,18 +208,32 @@ main#moc{
    }
 
 }
-
+body#account{
+.navbar{
+    padding: 0;
+}
+button{
+    span{
+        color: $paleyellow;
+    }
+}
+}
 @media only screen and (max-width: 768px) {
-    
-    main#mox{
-        div.container{
-            div.row{
-                .card{
-                    
+    body{
+        header{
+            nav{
+                div.container{
+                    button.navbar-toggler{
+                        display: none;
+                    }
+                    div.collapse{
+                        display:flex;
+                    }
                 }
             }
         }
     }
+    
 
 }
 
@@ -214,13 +250,18 @@ main#moc{
     div#nav{
         padding: 0;
     }
+    
     nav{
+        height:auto;
         display: flex;
         justify-content: center;
+        
         div.container{
             margin:0;
             padding: 0;
-
+            button{
+                padding: 1rem;
+            }
     
         }
         ul{
@@ -242,6 +283,9 @@ main#moc{
                 
             }
         }
+    }
+    .active{
+        background-color: $carmine-red;
     }
     main div#carouselExampleIndicators {
         //margin-top: 20px;

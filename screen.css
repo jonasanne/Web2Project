@@ -2,6 +2,17 @@ body {
   margin: 0;
   padding: 0;
 }
+body header nav div.container button span {
+  color: #FFFFC7;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.navbar {
+  padding: 0 !important;
+}
 
 header {
   height: auto;
@@ -19,6 +30,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   height: auto;
+  padding: 0;
 }
 nav ul {
   margin: 0;
@@ -119,6 +131,21 @@ main#moc hr {
   background: #B0413E;
 }
 
+body#account .navbar {
+  padding: 0;
+}
+body#account button span {
+  color: #FFFFC7;
+}
+
+@media only screen and (max-width: 768px) {
+  body header nav div.container button.navbar-toggler {
+    display: none;
+  }
+  body header nav div.container div.collapse {
+    display: flex;
+  }
+}
 @media only screen and (max-width: 995px) {
   nav {
     height: 100%;
@@ -134,12 +161,16 @@ main#moc hr {
   }
 
   nav {
+    height: auto;
     display: flex;
     justify-content: center;
   }
   nav div.container {
     margin: 0;
     padding: 0;
+  }
+  nav div.container button {
+    padding: 1rem;
   }
   nav ul {
     float: none;
@@ -156,6 +187,10 @@ main#moc hr {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .active {
+    background-color: #B0413E;
   }
 
   main div#carouselExampleIndicators {
