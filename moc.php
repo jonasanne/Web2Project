@@ -32,7 +32,8 @@
     
     <ul>
   <li class=""><a href="index.php">Home</a></li>
-  <li class="active"><a href="moc.php">Moc's</a></li>
+  <li class="active"><a href="moc.php">MOCs</a></li>
+  <li class="active"><a href="moc.php">Lego</a></li>
   <li ><a href="account.php">Account</a></li>
 </ul>
 </nav>    

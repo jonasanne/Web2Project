@@ -128,7 +128,7 @@ main#moc div.container div.row .card a img {
 }
 main#moc hr {
   margin-top: 0;
-  background: black;
+  background: #ff7dd2;
 }
 
 body#account .navbar {
