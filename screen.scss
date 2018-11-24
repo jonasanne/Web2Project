@@ -3,55 +3,60 @@ $width : 350px;
 $img-width:180px;
 $img-height:140px;
 $margin-thumbnail:10px;
-$font:'Lora', serif;
+$font:'Lora',
+serif;
 
 
-$taupe:#473335;
-$wintergreen:#548687;
-$paleyellow:#FFFFC7;
-$carmine-red:#B0413E;
-$rajah:#FCAA67;
+$orange: #ffa791;
+$red: #ff648b;
+$pink: #ff7dd2;
+$purple: #b18aff;
+$blue: #88c0ff;
 
-body{
-    header{
-        nav{
-            div.container{
-                 button{
-                    span{
-                        color: $paleyellow;
+body {
+    header {
+        nav {
+            div.container {
+                button {
+                    span {
+                        color: black;
+                    }
                 }
             }
-        }
 
+        }
     }
-}
+
     margin: 0;
     padding: 0;
 }
-.container-fluid{
+
+.container-fluid {
     max-width: 1200px;
 }
-.navbar{
-    padding: 0!important;
+
+.navbar {
+    padding: 0 !important;
 }
 
 header {
     // background-color: $accent;
     height: auto;
+
     #minifigure {
         max-width: 110px;
         max-height: 110px;
         //top: -20px;
         position: relative;
     }
-    
+
 }
 
 
 nav {
     height: 100px;
-    display: flex!important;
-    background-color: $taupe;
+    display: flex !important;
+    background-color: $blue;
     align-items: center;
     justify-content: flex-end;
     height: auto;
@@ -59,19 +64,21 @@ nav {
 
     ul {
         margin: 0;
+
         li {
             //background-color: yellow;
             list-style-type: none;
             float: left;
             font-size: 1.5rem;
             padding: 0.9rem;
-            color: $paleyellow;
+            color: black;
             font-family: $font;
 
             font-weight: bold;
             transition: 0.2s;
-            &:hover{
-                background-color: $carmine-red;
+
+            &:hover {
+                background-color: $orange;
             }
 
             & img {
@@ -82,9 +89,10 @@ nav {
             }
 
             a {
-                color: $paleyellow;
-                &:hover{
-                    color: $wintergreen;
+                color: black;
+
+                &:hover {
+                    color: black;
                 }
             }
 
@@ -98,7 +106,7 @@ nav {
 
 main#home {
     div#moc {
-        
+
         h2 {
             text-align: center;
             margin-top: $margin;
@@ -167,13 +175,14 @@ main#home {
 
     }
 
-    
+
 
 }
-main#moc{
-    
-    .new-moc{
-        h2{
+
+main#moc {
+
+    .new-moc {
+        h2 {
             display: flex;
             justify-content: center;
             margin: 0;
@@ -182,50 +191,53 @@ main#moc{
             font-weight: bold;
         }
     }
-    div.container{
-        div.row{
-            
-            .card{
+
+    div.container {
+        div.row {
+
+            .card {
                 //margin-top: $margin;
                 box-sizing: border-box;
                 max-width: 250px;
-                margin:  0 auto;
+                margin: 0 auto;
                 margin-bottom: $margin;
-                a{
-                    img{
+
+                a {
+                    img {
                         width: 100%;
                         height: auto;
                     }
-                }                
+                }
             }
         }
     }
-   
-   hr{
-       margin-top: 0;
-       background: $carmine-red;
-       
-   }
+
+    hr {
+        margin-top: 0;
+        background: black;
+
+    }
 
 }
-body#account{
-.navbar{
-    padding: 0;
-}
-button{
-    span{
-        color: $paleyellow;
+
+body#account {
+    .navbar {
+        padding: 0;
+    }
+
+    button {
+        span {
+            color: black;
+        }
     }
 }
-}
+
 @media only screen and (max-width: 768px) {
-    
-    main#mox{
-        div.container{
-            div.row{
-                .card{
-                    
-                }
+
+    main#mox {
+        div.container {
+            div.row {
+                .card {}
             }
         }
     }
@@ -242,24 +254,27 @@ button{
     #minifigure {
         display: none;
     }
-    div#nav{
+
+    div#nav {
         padding: 0;
     }
-    
-    nav{
-        height:auto;
+
+    nav {
+        height: auto;
         display: flex;
         justify-content: center;
-        
-        div.container{
-            margin:0;
+
+        div.container {
+            margin: 0;
             padding: 0;
-            button{
+
+            button {
                 padding: 1rem;
             }
-    
+
         }
-        ul{
+
+        ul {
             float: none;
             display: flex;
             flex-direction: column;
@@ -267,24 +282,26 @@ button{
             justify-items: center;
             margin: 0;
             padding: 0;
-            
 
-            li{
+
+            li {
                 float: none;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
             }
         }
     }
-    .active{
-        background-color: $carmine-red;
+
+    .active {
+        background-color: $orange;
     }
+
     main div#carouselExampleIndicators {
         //margin-top: 20px;
         display: none;
     }
-    
+
 }
