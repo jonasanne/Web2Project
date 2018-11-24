@@ -1,0 +1,290 @@
+$margin : 25px;
+$width : 350px;
+$img-width:180px;
+$img-height:140px;
+$margin-thumbnail:10px;
+$font:'Lora', serif;
+
+
+$taupe:#473335;
+$wintergreen:#548687;
+$paleyellow:#FFFFC7;
+$carmine-red:#B0413E;
+$rajah:#FCAA67;
+
+body{
+    header{
+        nav{
+            div.container{
+                 button{
+                    span{
+                        color: $paleyellow;
+                }
+            }
+        }
+
+    }
+}
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    max-width: 1200px;
+}
+.navbar{
+    padding: 0!important;
+}
+
+header {
+    // background-color: $accent;
+    height: auto;
+    #minifigure {
+        max-width: 110px;
+        max-height: 110px;
+        //top: -20px;
+        position: relative;
+    }
+    
+}
+
+
+nav {
+    height: 100px;
+    display: flex!important;
+    background-color: $taupe;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    padding: 0;
+
+    ul {
+        margin: 0;
+        li {
+            //background-color: yellow;
+            list-style-type: none;
+            float: left;
+            font-size: 1.5rem;
+            padding: 0.9rem;
+            color: $paleyellow;
+            font-family: $font;
+
+            font-weight: bold;
+            transition: 0.2s;
+            &:hover{
+                background-color: $carmine-red;
+            }
+
+            & img {
+                top: 20px;
+                height: auto;
+                max-width: 100px;
+
+            }
+
+            a {
+                color: $paleyellow;
+                &:hover{
+                    color: $wintergreen;
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+main#home {
+    div#moc {
+        
+        h2 {
+            text-align: center;
+            margin-top: $margin;
+        }
+
+        div.row>div {
+            width: auto;
+            height: auto;
+            //padding: 0;
+            margin: auto;
+        }
+
+        div.row a img {
+            margin-top: $margin;
+            //max-width: $img-width;
+            //max-height: $img-height;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+
+            border-radius: 15px;
+
+            &:hover {
+                box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
+
+            }
+
+
+        }
+
+        button {
+            margin-top: $margin;
+
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            ;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    div.container article {
+        //border: solid 1px black;
+        margin-top: $margin;
+        max-width: $width;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: $margin;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        &:first-child {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:last-child {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+    }
+
+    
+
+}
+main#moc{
+    
+    .new-moc{
+        h2{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            margin-top: $margin;
+            font-family: $font;
+            font-weight: bold;
+        }
+    }
+    div.container{
+        div.row{
+            
+            .card{
+                //margin-top: $margin;
+                box-sizing: border-box;
+                max-width: 250px;
+                margin:  0 auto;
+                margin-bottom: $margin;
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }                
+            }
+        }
+    }
+   
+   hr{
+       margin-top: 0;
+       background: $carmine-red;
+       
+   }
+
+}
+body#account{
+.navbar{
+    padding: 0;
+}
+button{
+    span{
+        color: $paleyellow;
+    }
+}
+}
+@media only screen and (max-width: 768px) {
+    
+    main#mox{
+        div.container{
+            div.row{
+                .card{
+                    
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 995px) {
+    nav {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #minifigure {
+        display: none;
+    }
+    div#nav{
+        padding: 0;
+    }
+    
+    nav{
+        height:auto;
+        display: flex;
+        justify-content: center;
+        
+        div.container{
+            margin:0;
+            padding: 0;
+            button{
+                padding: 1rem;
+            }
+    
+        }
+        ul{
+            float: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+            
+
+            li{
+                float: none;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+    }
+    .active{
+        background-color: $carmine-red;
+    }
+    main div#carouselExampleIndicators {
+        //margin-top: 20px;
+        display: none;
+    }
+    
+}
