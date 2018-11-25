@@ -1,4 +1,8 @@
-
+<?php include_once 'scripts/config.php';?>
+<?php include_once 'scripts/api.php';?>
+<?php
+print_r($DB);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
