@@ -1,4 +1,4 @@
-$margin : 25px;
+$margin : 20px;
 $width : 350px;
 $img-width:180px;
 $img-height:140px;
@@ -7,13 +7,18 @@ $font:'Lora',
 serif;
 
 
-$orange: #ffa791;
-$red: #ff648b;
-$pink: #ff7dd2;
-$purple: #b18aff;
-$blue: #88c0ff;
+$blue: #3891A6;
+$black: #4C5B5C;
+$yellow: #FDD92D;
+$red: #DB5461;
+$orange: #E3655B;
+$background:#F8F8F8;
+
 
 body {
+    font-family: $font;
+
+
     header {
         nav {
             div.container {
@@ -45,7 +50,7 @@ header {
 
     #minifigure {
         max-width: 110px;
-        max-height: 110px;
+        max-height: 100px;
         //top: -20px;
         position: relative;
     }
@@ -53,10 +58,13 @@ header {
 }
 
 
+
+
+
 nav {
     height: 100px;
     display: flex !important;
-    background-color: $blue;
+    background-color: $yellow;
     align-items: center;
     justify-content: flex-end;
     height: auto;
@@ -69,7 +77,7 @@ nav {
             //background-color: yellow;
             list-style-type: none;
             float: left;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             padding: 0.9rem;
             color: black;
             font-family: $font;
@@ -77,9 +85,13 @@ nav {
             font-weight: bold;
             transition: 0.2s;
 
-            &:hover {
-                background-color: $orange;
+
+
+            i {
+                margin-right: 10px;
             }
+
+
 
             & img {
                 top: 20px;
@@ -92,7 +104,7 @@ nav {
                 color: black;
 
                 &:hover {
-                    color: black;
+                    color: $black;
                 }
             }
 
@@ -105,6 +117,10 @@ nav {
 }
 
 main#home {
+    font-family: $font;
+    background-color: $background;
+
+
     div#moc {
 
         h2 {
@@ -179,7 +195,28 @@ main#home {
 
 }
 
+div.link {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    a {
+
+        background-color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bold;
+
+
+    }
+}
+
 main#moc {
+    div.container-fluid {}
 
     .new-moc {
         h2 {
@@ -214,7 +251,7 @@ main#moc {
 
     hr {
         margin-top: 0;
-        background: $pink;
+        background: $red;
 
     }
 

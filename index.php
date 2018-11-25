@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,12 +20,12 @@
 </head>
 <body id="body">
 <header>
-  <div class="container">
-<img src="image/minifig2.png" id="minifigure" alt="">
 
-</div>
 <nav class="navbar navbar-expand-lg ">
 <div class="container">
+  
+<img src="image/batman.png" id="minifigure" alt="">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class=""><i class="fas fa-bars"></i></span>
   </button>
@@ -33,8 +35,8 @@
     <ul>
   <li class="active"><a href="index.php">Home</a></li>
   <li><a href="moc.php">MOCs</a></li>
-  <li><a href="">Lego</a></li>
-  <li class=""><a href="account.php">Account</a></li>
+  <li><a href="lego.php">Lego</a></li>
+  <li class=""><a href="account.php"><i class="fas fa-user-alt"></i>Account</a></li>
 </ul>
 </nav>    
   </div>
@@ -110,8 +112,8 @@
     <a href=""><img src="image/moc's/groot.jpg" alt=""></a>
     </div>
   </div>
-  <div class="margin-top-30 text-center">
-  <button type="button" class="btn btn-outline-dark"><a href="">Bekijk hier alle moc's!</a></button>
+  <div class="link">
+<a href="">Klik hier!</a>
   </div>
 </div>
 <div class="container">

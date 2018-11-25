@@ -1,4 +1,5 @@
 body {
+  font-family: "Lora", serif;
   margin: 0;
   padding: 0;
 }
@@ -19,14 +20,14 @@ header {
 }
 header #minifigure {
   max-width: 110px;
-  max-height: 110px;
+  max-height: 100px;
   position: relative;
 }
 
 nav {
   height: 100px;
   display: flex !important;
-  background-color: #88c0ff;
+  background-color: #FDD92D;
   align-items: center;
   justify-content: flex-end;
   height: auto;
@@ -38,15 +39,15 @@ nav ul {
 nav ul li {
   list-style-type: none;
   float: left;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0.9rem;
   color: black;
   font-family: "Lora", serif;
   font-weight: bold;
   transition: 0.2s;
 }
-nav ul li:hover {
-  background-color: #ffa791;
+nav ul li i {
+  margin-right: 10px;
 }
 nav ul li img {
   top: 20px;
@@ -57,15 +58,19 @@ nav ul li a {
   color: black;
 }
 nav ul li a:hover {
-  color: black;
+  color: #4C5B5C;
 }
 nav ul li a:hover {
   text-decoration: none;
 }
 
+main#home {
+  font-family: "Lora", serif;
+  background-color: #F8F8F8;
+}
 main#home div#moc h2 {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 main#home div#moc div.row > div {
   width: auto;
@@ -73,7 +78,7 @@ main#home div#moc div.row > div {
   margin: auto;
 }
 main#home div#moc div.row a img {
-  margin-top: 25px;
+  margin-top: 20px;
   width: 100%;
   height: auto;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
@@ -83,7 +88,7 @@ main#home div#moc div.row a img:hover {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
 }
 main#home div#moc button {
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
@@ -92,11 +97,11 @@ main#home div#moc button a {
   color: black;
 }
 main#home div.container article {
-  margin-top: 25px;
+  margin-top: 20px;
   max-width: 350px;
   border-radius: 15px;
   padding: 1rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
 main#home div.container article:first-child {
@@ -108,11 +113,27 @@ main#home div.container article:last-child {
   margin-right: auto;
 }
 
+div.link {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.link a {
+  background-color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
 main#moc .new-moc h2 {
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   font-family: "Lora", serif;
   font-weight: bold;
 }
@@ -120,7 +141,7 @@ main#moc div.container div.row .card {
   box-sizing: border-box;
   max-width: 250px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 main#moc div.container div.row .card a img {
   width: 100%;
@@ -128,7 +149,7 @@ main#moc div.container div.row .card a img {
 }
 main#moc hr {
   margin-top: 0;
-  background: #ff7dd2;
+  background: #DB5461;
 }
 
 body#account .navbar {
@@ -182,7 +203,7 @@ body#account button span {
   }
 
   .active {
-    background-color: #ffa791;
+    background-color: #E3655B;
   }
 
   main div#carouselExampleIndicators {
