@@ -4,21 +4,33 @@
 //mocs
 $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
 $moclink="https://rebrickable.com/api/v3/lego/mocs/MOC-";
-
 //"https://rebrickable.com/api/v3/lego/mocs/?key=3058fe9f830ab53859bf5e7668abe35d";
-// $data = json_decode(file_get_contents($link), true);
 
-
-
-//print_r($data);
 //zo vraag je data op lol
-//echo "id: ". $data['year'];
-// $random=rand(999,25000);
-// $create_url_moc = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . $random  . $key ;
-// $data_moc = json_decode(file_get_contents($create_url_moc), true);
+//$random=rand(999,25000);
+$create_url = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "18916"  . $authkey ;
+$data_moc = json_decode(file_get_contents($create_url), true);
+$moc_url=$data_moc['moc_img_url'];
 
-// $moc_url=$data_moc['moc_img_url'];
-// $moc_nr=$data_moc['set_num'];
+$create_url1 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "19433"  . $authkey ;
+$data_moc1 = json_decode(file_get_contents($create_url1), true);
+
+$create_url2 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15881"  . $authkey ;
+$data_moc2 = json_decode(file_get_contents($create_url2), true);
+
+$create_url3 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "19561"  . $authkey ;
+$data_moc3 = json_decode(file_get_contents($create_url3), true);
+
+$create_url4 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "14898"  . $authkey ;
+$data_moc4 = json_decode(file_get_contents($create_url4), true);
+
+$create_url5 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15292"  . $authkey ;
+$data_moc5 = json_decode(file_get_contents($create_url5), true);
+
+
+
+
+
 
 // if(!$moc_url){
 // do {
@@ -31,31 +43,8 @@ $moclink="https://rebrickable.com/api/v3/lego/mocs/MOC-";
 // if(isset($moc_url)){
 //   print($moc_url);
 //   print($moc_nr);
-  
 // }else{
-  
 // }
-do{
-  $create_url_moc;
-  break;
-
-}while($data_moc['detail'] = "Not found.");
-
-//print($random);
-//print("<a href=".$create_url_moc.'">'."Klik hier faggit" ."</a>");
-print($moc_url);
-
-
-
-
-
-//$vluchten = CallAPI("GET",$DB . "/tblvlucht");
-
-
-
-// string http_get_request_body ($check);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -80,10 +69,10 @@ print($moc_url);
 <header>
 
 
-<nav class="navbar navbar-expand-lg ">
-<div class="container">
+  <nav class="navbar navbar-expand-lg ">
+  <div class="container">
   
-<img src="image/batman.png" id="minifigure" alt="">
+  <img src="image/batman.png" id="minifigure" alt="">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class=""><i class="fas fa-bars"></i></span>
@@ -96,11 +85,11 @@ print($moc_url);
   <li><a href="moc.php">MOCs</a></li>
   <li><a href="lego.php">Lego</a></li>
   <li class=""><a href="account.php"><i class="fas fa-user-alt"></i>Account</a></li>
-</ul>
-</nav>    
+  </ul>
+  </nav>    
   </div>
 
-</div>
+  </div>
 </header>
 <main id="home">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -132,30 +121,23 @@ print($moc_url);
 
 <div class="container" id="moc">
   <h2>Moc's</h2>
-  <?php
-  $moc_url = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . $random  . $key ;
-  $data_moc = json_decode(file_get_contents($create_url_moc), true);
-  
-  $moc_url=$data_moc['moc_img_url'];
-  $moc_nr=$data_moc['set_num'];
-  
-  
-  
-  
-  
-
-
-
-
-
-  ?>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php ?>" alt=""></a>
+    <a href=""><img src="<?php  print($data_moc['moc_img_url']);   ?>" alt=""></a>
     </div>
-   
-
-
+    
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href=""><img src="<?php  print($data_moc1['moc_img_url']);?>" alt=""></a>
+    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href=""><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
+    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href=""><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
+    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href=""><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
+    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href=""><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
+    </div>
+ 
 
 
   </div>
