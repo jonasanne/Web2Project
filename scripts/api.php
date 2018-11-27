@@ -12,6 +12,11 @@ function CallAPI($method, $url, $data = false)
             }
 
             break;
+        case "GET":
+            //bij enkel opvragen van data
+            
+
+
         case "PUT":
             if (!$data) {
                 echo "Kan niet updaten zonder data";

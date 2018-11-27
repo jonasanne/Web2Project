@@ -3,14 +3,21 @@
 <img src="image/minifig2.png" id="minifigure" alt="">
 
 </div>
-
-</header>
-<nav>
+<nav class="navbar navbar-expand-lg ">
 <div class="container">
-<ul>
-  <li class="active"><a href="index.php">Home</a></li>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class=""><i class="fas fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul>
+  <li class=""><a href="index.php">Home</a></li>
   <li><a href="moc.php">Moc's</a></li>
-  <li><a href="account.php">Account</a></li>
+  <li class="active"><a href="account.php">Account</a></li>
 </ul>
+</nav>    
+  </div>
+
 </div>
-</nav>
+</header>
