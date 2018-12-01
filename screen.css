@@ -129,6 +129,11 @@ div.link a {
   font-weight: bold;
 }
 
+main#moc span#img_lego {
+  display: flex;
+  justify-content: center;
+  background-color: #3891A6;
+}
 main#moc .new-moc h2 {
   display: flex;
   justify-content: center;
@@ -150,6 +155,34 @@ main#moc div.container div.row .card a img {
 main#moc hr {
   margin-top: 0;
   background: #DB5461;
+}
+
+main#account {
+  background-color: #F8F8F8;
+  font-family: "Lora", serif;
+}
+main#account div.container-fluid section#navigatie {
+  padding-top: 100px;
+  border: solid 1 px #4C5B5C;
+  width: auto;
+}
+main#account div.container-fluid section#navigatie ul {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main#account div.container-fluid section#navigatie ul li {
+  padding: 1rem;
+  font-size: 1.2rem;
+  list-style: none;
+  text-align: center;
+}
+main#account div.container-fluid section#navigatie ul li:not(:last-child) {
+  border-bottom: 1px solid #3891A6;
+}
+main#account div.container-fluid section#navigatie ul li a {
+  color: #3891A6;
 }
 
 body#account .navbar {
