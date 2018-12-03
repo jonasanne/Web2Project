@@ -199,7 +199,7 @@ div.link {
 
     a {
 
-        background-color: white;
+        background-color: $yellow;
         padding: 0.5rem;
         text-decoration: none;
         border-radius: 20px;
@@ -268,6 +268,15 @@ main#account {
             padding-top: 100px;
             border: solid 1 px $black;
             width: auto;
+
+            display: flex;
+
+            article#content {
+                background-color: #fff;
+                margin-left: $margin;
+                margin-bottom: $margin;
+
+            }
 
             ul {
                 width: 100%;

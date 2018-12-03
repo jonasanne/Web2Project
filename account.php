@@ -32,7 +32,9 @@
     <li> <a href="">Persoonlijke gegevens</a></li>
   </ul>
 
-  <article>
+  <article class="col-lg-9" id="content">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus placeat corrupti non nemo deserunt aut magni similique fugiat aliquid
+   itaque. Voluptatum voluptatem eligendi fuga molestiae aliquid fugit corporis non doloremque.</p>
 
 
 

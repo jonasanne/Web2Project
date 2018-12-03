@@ -9,47 +9,34 @@ $moclink="https://rebrickable.com/api/v3/lego/mocs/MOC-";
 //zo vraag je data op lol
 //$random=rand(999,25000);
 //dit zijn de mocs
-$create_url = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15849"  . $authkey ;
-$data_moc = json_decode(file_get_contents($create_url), true);
-$moc_url=$data_moc['moc_img_url'];
-
-$create_url1 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "19433"  . $authkey ;
-$data_moc1 = json_decode(file_get_contents($create_url1), true);
-
-$create_url2 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15881"  . $authkey ;
-$data_moc2 = json_decode(file_get_contents($create_url2), true);
-
-$create_url3 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "19683"  . $authkey ;
-$data_moc3 = json_decode(file_get_contents($create_url3), true);
-
-$create_url4 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "14898"  . $authkey ;
-$data_moc4 = json_decode(file_get_contents($create_url4), true);
-
-$create_url5 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15292"  . $authkey ;
-$data_moc5 = json_decode(file_get_contents($create_url5), true);
-
-$create_url6 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "15594"  . $authkey ;
-$data_moc6 = json_decode(file_get_contents($create_url6), true);
-
-$create_url7 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "16003"  . $authkey ;
-$data_moc7 = json_decode(file_get_contents($create_url7), true);
-
-$create_url8 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "13999"  . $authkey ;
-$data_moc8 = json_decode(file_get_contents($create_url8), true);
-
-$create_url9 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "17649"  . $authkey ;
-$data_moc9= json_decode(file_get_contents($create_url9), true);
-
-$create_url10 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "14637"  . $authkey ;
-$data_moc10 = json_decode(file_get_contents($create_url10), true);
-
-$create_url11 = "https://rebrickable.com/api/v3/lego/mocs/MOC-" . "16083"  . $authkey ;
-$data_moc11 = json_decode(file_get_contents($create_url11), true);
-
-
+$url_moc = $url_sets = "https://rebrickable.com/api/v3/lego/mocs/MOC-";
+$data_moc1=json_decode(file_get_contents($url_moc . "15849" . $authkey), true);
+$data_moc2=json_decode(file_get_contents($url_moc . "15881" . $authkey), true);
+$data_moc3=json_decode(file_get_contents($url_moc . "19683" . $authkey), true);
+$data_moc4=json_decode(file_get_contents($url_moc . "14898" . $authkey), true);
+$data_moc5=json_decode(file_get_contents($url_moc . "15292" . $authkey), true);
+$data_moc6=json_decode(file_get_contents($url_moc . "15594" . $authkey), true);
+$data_moc7=json_decode(file_get_contents($url_moc . "16003" . $authkey), true);
+$data_moc8=json_decode(file_get_contents($url_moc . "13999" . $authkey), true);
+$data_moc9=json_decode(file_get_contents($url_moc . "17649" . $authkey), true);
+$data_moc10=json_decode(file_get_contents($url_moc . "14637" . $authkey), true);
+$data_moc11=json_decode(file_get_contents($url_moc . "13424" . $authkey), true);
+$data_moc12=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
 //dit zijn de legosets
 
-
+$url_sets = "https://rebrickable.com/api/v3/lego/sets/";
+$data_set1 = json_decode(file_get_contents( $url_sets . "75212" . "-1" . $authkey), true);
+$data_set2 = json_decode(file_get_contents( $url_sets . "75190" . "-1" . $authkey), true);
+$data_set3 = json_decode(file_get_contents( $url_sets . "21125" . "-1" . $authkey), true);
+$data_set4 = json_decode(file_get_contents( $url_sets . "60154" . "-1" . $authkey), true);
+$data_set5 = json_decode(file_get_contents( $url_sets . "71043" . "-1" . $authkey), true);
+$data_set6 = json_decode(file_get_contents( $url_sets . "75953" . "-1" . $authkey), true);
+$data_set7 = json_decode(file_get_contents( $url_sets . "75218" . "-1" . $authkey), true);
+$data_set8 = json_decode(file_get_contents( $url_sets . "75187" . "-1" . $authkey), true);
+$data_set9 = json_decode(file_get_contents( $url_sets . "60197" . "-1" . $authkey), true);
+$data_set10 = json_decode(file_get_contents( $url_sets . "41332" . "-1" . $authkey), true);
+$data_set11 = json_decode(file_get_contents( $url_sets . "41314" . "-1" . $authkey), true);
+$data_set12 = json_decode(file_get_contents( $url_sets . "60139" . "-1" . $authkey), true);
 
 
 
@@ -59,12 +46,12 @@ $data_moc11 = json_decode(file_get_contents($create_url11), true);
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="screen.css">
-<script
+  <link rel="stylesheet" href="screen.css">
+  <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,79 +94,88 @@ $data_moc11 = json_decode(file_get_contents($create_url11), true);
   <h2>Moc's</h2>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc1['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc2['set_num']) ?>"><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc3['set_num']) ?>"><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc4['set_num']) ?>"><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc5['set_num']) ?>"><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc6['set_num']) ?>"><img src="<?php  print($data_moc6['moc_img_url']);?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc6['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc7['set_num']) ?>"><img src="<?php  print($data_moc7['moc_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc7['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc8['set_num']) ?>"><img src="<?php  print($data_moc8['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc8['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc9['set_num']) ?>"><img src="<?php  print($data_moc9['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc9['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc10['set_num']) ?>"><img src="<?php  print($data_moc10['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc10['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc11['set_num']) ?>"><img src="<?php  print($data_moc11['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc11['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_moc12['set_num']) ?>"><img src="<?php  print($data_moc12['moc_img_url']);?>" alt=""></a>
     </div>
  
 
 
   </div>
   <div class="link">
-<a href="">Klik hier!</a>
+<a href="moc.php">Klik hier voor alle mocs!</a>
   </div>
 </div>
-<div class="container" id="moc">
+<div class="container" id="moc" name="lego">
   <h2>Lego</h2>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set1['set_num']) ?>"><img src="<?php  print($data_set1['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc1['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set2['set_num']) ?>"><img src="<?php  print($data_set2['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set3['set_num']) ?>"><img src="<?php  print($data_set3['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc1['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href=""><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set4['set_num']) ?>"><img src="<?php  print($data_set4['set_img_url']);   ?>" alt=""></a>
     </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set5['set_num']) ?>"><img src="<?php  print($data_set5['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set6['set_num']) ?>"><img src="<?php  print($data_set6['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set7['set_num']) ?>"><img src="<?php  print($data_set7['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set8['set_num']) ?>"><img src="<?php  print($data_set8['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set9['set_num']) ?>"><img src="<?php  print($data_set9['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set10['set_num']) ?>"><img src="<?php  print($data_set10['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set11['set_num']) ?>"><img src="<?php  print($data_set11['set_img_url']);   ?>" alt=""></a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <a href="detail.php?nummer=<?php print($data_set12['set_num']) ?>"><img src="<?php  print($data_set12['set_img_url']);   ?>" alt=""></a>
+    </div>
+    
     
  
 
 
   </div>
   <div class="link">
-<a href="">Klik hier!</a>
+<a href="lego.php">Klik hier voor alle legosets!</a>
   </div>
     
     

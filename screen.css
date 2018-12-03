@@ -120,7 +120,7 @@ div.link {
   align-content: center;
 }
 div.link a {
-  background-color: white;
+  background-color: #FDD92D;
   padding: 0.5rem;
   text-decoration: none;
   border-radius: 20px;
@@ -165,6 +165,12 @@ main#account div.container-fluid section#navigatie {
   padding-top: 100px;
   border: solid 1 px #4C5B5C;
   width: auto;
+  display: flex;
+}
+main#account div.container-fluid section#navigatie article#content {
+  background-color: #fff;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 main#account div.container-fluid section#navigatie ul {
   width: 100%;
