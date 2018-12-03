@@ -23,23 +23,39 @@
  <main id="account"> 
    <div class="container-fluid">
   <section id="navigatie">
-  <ul class="col-lg-3 hidden-s">
-    
-    <li> <a href=""><i class="fas fa-heart"></i> Verlanglijst</a></li>
-    <li> <a href=""><i class="fas fa-star"></i> favoriete mocs</a></li>
-    <li> <a href="">geen idee</a></li>
-    <li> <a href="">Lego collection</a></li>
-    <li> <a href="">Persoonlijke gegevens</a></li>
-  </ul>
+  <div class="col-lg-3 profile">
+    <div class="img">
+      <img src="image/lego_avatar.png" width="" height="100px" alt="">
+    </div>
+    <div class="username"><h2>Jonasanne</h2></div>
+    <div class="sets"><span>sets:</span></div>
+    <hr>
+    <div class="sets"><span>parts:</span></div>
+    <hr>
+    <div class="sets"><span>geboren op:</span></div>
+  </div>
+  <div class="all-small-cards ">
+    <div class=" small-cards col-lg-5">
+      <!-- icon -->
+      <div class="icon"><i class="far fa-heart"></i></div>
 
-  <article class="col-lg-9" id="content">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus placeat corrupti non nemo deserunt aut magni similique fugiat aliquid
-   itaque. Voluptatum voluptatem eligendi fuga molestiae aliquid fugit corporis non doloremque.</p>
+     <!-- tekst -->
+       <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>
+  </div>
+  <div class=" small-cards col-lg-5">
+    <!-- icon -->
+    <div class="icon"><i class="far fa-heart"></i></div>
 
+    <!-- tekst -->
+    <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>  </div>
+  <div class=" small-cards col-lg-5">
+    <!-- icon -->
+    <div class="icon"><i class="far fa-heart"></i></div>
+    <!-- tekst -->
+    <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>  </div>
+  </div>
+  
 
-
-
-  </article>
   
   </section>
   </div> 

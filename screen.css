@@ -172,23 +172,49 @@ main#account div.container-fluid section#navigatie article#content {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-main#account div.container-fluid section#navigatie ul {
-  width: 100%;
+main#account div.container-fluid section#navigatie div.profile {
   background-color: #fff;
+  padding: 1.2rem;
+}
+main#account div.container-fluid section#navigatie div.profile hr {
+  background: #3891A6;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main#account div.container-fluid section#navigatie div.profile div.img {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
 }
-main#account div.container-fluid section#navigatie ul li {
-  padding: 1rem;
+main#account div.container-fluid section#navigatie div.profile div.username {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+main#account div.container-fluid section#navigatie div.profile div.sets span {
   font-size: 1.2rem;
-  list-style: none;
-  text-align: center;
 }
-main#account div.container-fluid section#navigatie ul li:not(:last-child) {
-  border-bottom: 1px solid #3891A6;
+main#account div.container-fluid section#navigatie div.all-small-cards {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
 }
-main#account div.container-fluid section#navigatie ul li a {
-  color: #3891A6;
+main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  max-height: 125px;
+  max-width: 250px;
+}
+main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards span.tekst {
+  align-self: flex-end;
+}
+main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards:first-child {
+  margin-right: 20px;
+}
+main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards:last-child {
+  margin-left: 20px;
 }
 
 body#account .navbar {

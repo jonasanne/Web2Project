@@ -278,29 +278,70 @@ main#account {
 
             }
 
-            ul {
-                width: 100%;
+            div.profile {
                 background-color: #fff;
-                display: flex;
-                flex-direction: column;
+                padding: 1.2rem;
 
+                hr {
+                    background: $blue;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
 
-                li {
-                    padding: 1rem;
-                    font-size: 1.2rem;
-                    list-style: none;
-                    text-align: center;
+                div.img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: $margin;
 
+                }
 
-                    &:not(:last-child) {
-                        border-bottom: 1px solid $blue;
-                    }
+                div.username {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: $margin-thumbnail;
+                }
 
-                    a {
-                        color: $blue;
+                div.sets {
+                    span {
+                        font-size: 1.2rem;
                     }
                 }
             }
+
+            div.all-small-cards {
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin-left: $margin;
+
+                div.small-cards {
+                    display: flex;
+                    justify-content: center;
+                    background-color: #fff;
+                    max-height: 125px;
+                    max-width: 250px;
+
+                    div.icon {}
+
+                    span.tekst {
+                        align-self: flex-end;
+                    }
+
+
+
+                    &:first-child {
+                        margin-right: $margin;
+
+                    }
+
+                    &:last-child {
+                        margin-left: $margin;
+                    }
+                }
+
+            }
+
+
         }
     }
 
