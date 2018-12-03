@@ -266,8 +266,7 @@ main#account {
     div.container-fluid {
         section#navigatie {
             padding-top: 100px;
-            border: solid 1 px $black;
-            width: auto;
+            
 
             display: flex;
 
@@ -281,6 +280,7 @@ main#account {
             div.profile {
                 background-color: #fff;
                 padding: 1.2rem;
+                width: 100%;
 
                 hr {
                     background: $blue;
@@ -308,41 +308,81 @@ main#account {
                 }
             }
 
+            
+
+        }
+        section.content{
+            margin-top: 100px;
+            display: flex;
             div.all-small-cards {
                 display: flex;
                 width: 100%;
                 height: auto;
-                margin-left: $margin;
+                justify-content: space-between;
+                div.row{
+                    width: 100%;
+                }
 
-                div.small-cards {
-                    display: flex;
-                    justify-content: center;
-                    background-color: #fff;
-                    max-height: 125px;
-                    max-width: 250px;
+            div.small-cards {
+                background-color: #fff;
+                max-height: 125px;
+                max-width: 250px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
 
-                    div.icon {}
-
-                    span.tekst {
-                        align-self: flex-end;
-                    }
-
-
-
-                    &:first-child {
-                        margin-right: $margin;
-
-                    }
-
-                    &:last-child {
-                        margin-left: $margin;
+                a{
+                    text-decoration: none;
+                }
+                &:hover{
+                    div.icon{
+                        i{
+                            font-size: 4rem;
+                        }
                     }
                 }
 
+                div.icon {
+                    position: relative;
+                    height: 45px;
+                    width: 60px;
+                    margin: 6px auto 12px;
+                    text-align: center;
+                    i{
+                        font-size: 3.5rem;
+                        color: black;
+                    }
+                }
+
+                div.tekst {
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    
+                }
+
+
+
+                &:first-child {
+                    margin-right: 10px;
+
+                }
+
+                &:last-child {
+                    margin-left: 10px;
+                }
             }
 
-
         }
+        div.article1{
+            display: flex;
+            position: relative;
+        }
+    }
+
     }
 
 

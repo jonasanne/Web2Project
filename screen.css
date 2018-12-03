@@ -163,8 +163,6 @@ main#account {
 }
 main#account div.container-fluid section#navigatie {
   padding-top: 100px;
-  border: solid 1 px #4C5B5C;
-  width: auto;
   display: flex;
 }
 main#account div.container-fluid section#navigatie article#content {
@@ -175,6 +173,7 @@ main#account div.container-fluid section#navigatie article#content {
 main#account div.container-fluid section#navigatie div.profile {
   background-color: #fff;
   padding: 1.2rem;
+  width: 100%;
 }
 main#account div.container-fluid section#navigatie div.profile hr {
   background: #3891A6;
@@ -194,27 +193,61 @@ main#account div.container-fluid section#navigatie div.profile div.username {
 main#account div.container-fluid section#navigatie div.profile div.sets span {
   font-size: 1.2rem;
 }
-main#account div.container-fluid section#navigatie div.all-small-cards {
+main#account div.container-fluid section.content {
+  margin-top: 100px;
+  display: flex;
+}
+main#account div.container-fluid section.content div.all-small-cards {
   display: flex;
   width: 100%;
   height: auto;
-  margin-left: 20px;
+  justify-content: space-between;
 }
-main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards {
-  display: flex;
-  justify-content: center;
+main#account div.container-fluid section.content div.all-small-cards div.row {
+  width: 100%;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards {
   background-color: #fff;
   max-height: 125px;
   max-width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards span.tekst {
-  align-self: flex-end;
+main#account div.container-fluid section.content div.all-small-cards div.small-cards a {
+  text-decoration: none;
 }
-main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards:first-child {
-  margin-right: 20px;
+main#account div.container-fluid section.content div.all-small-cards div.small-cards:hover div.icon i {
+  font-size: 4rem;
 }
-main#account div.container-fluid section#navigatie div.all-small-cards div.small-cards:last-child {
-  margin-left: 20px;
+main#account div.container-fluid section.content div.all-small-cards div.small-cards div.icon {
+  position: relative;
+  height: 45px;
+  width: 60px;
+  margin: 6px auto 12px;
+  text-align: center;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards div.icon i {
+  font-size: 3.5rem;
+  color: black;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards div.tekst {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards div.tekst:hover {
+  text-decoration: none;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards:first-child {
+  margin-right: 10px;
+}
+main#account div.container-fluid section.content div.all-small-cards div.small-cards:last-child {
+  margin-left: 10px;
+}
+main#account div.container-fluid section.content div.article1 {
+  display: flex;
+  position: relative;
 }
 
 body#account .navbar {

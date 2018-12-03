@@ -21,10 +21,12 @@
 <body id="account">
 <?php include_once 'include/header.php'; ?>
  <main id="account"> 
-   <div class="container-fluid">
-  <section id="navigatie">
-  <div class="col-lg-3 profile">
-    <div class="img">
+   <div class="container-fluid ">
+     <div class="row">
+  <section class="col-lg-3" id="navigatie">
+    
+    <div class=" profile">
+      <div class="img">
       <img src="image/lego_avatar.png" width="" height="100px" alt="">
     </div>
     <div class="username"><h2>Jonasanne</h2></div>
@@ -33,36 +35,47 @@
     <div class="sets"><span>parts:</span></div>
     <hr>
     <div class="sets"><span>geboren op:</span></div>
-  </div>
-  <div class="all-small-cards ">
-    <div class=" small-cards col-lg-5">
+    </div>
+  </section>
+  
+  <section class="content col-lg-8">
+  
+    <div class="all-small-cards">
+      <div class="row">
+    <div class=" small-cards col-lg-4">
+      <a href="">
       <!-- icon -->
       <div class="icon"><i class="far fa-heart"></i></div>
 
      <!-- tekst -->
-       <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>
-  </div>
-  <div class=" small-cards col-lg-5">
-    <!-- icon -->
-    <div class="icon"><i class="far fa-heart"></i></div>
+     <div class="tekst">Verlanglijst <i class="fas fa-angle-right"></i> </div>
+       <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
+       </a>
+      </div>
+    <div class=" small-cards col-lg-4">
+      <a href="">
+      <!-- icon -->
+      <div class="icon"><i class="far fa-heart"></i></div>
 
-    <!-- tekst -->
-    <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>  </div>
-  <div class=" small-cards col-lg-5">
-    <!-- icon -->
-    <div class="icon"><i class="far fa-heart"></i></div>
-    <!-- tekst -->
-    <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span>  </div>
-  </div>
-  
+     <!-- tekst -->
+     <div class="tekst">Verlanglijst <i class="fas fa-angle-right"></i> </div>
+       <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
+       </a>
+      </div>
+    <div class=" small-cards col-lg-4">
+      <a href="">
+      <!-- icon -->
+      <div class="icon"><i class="far fa-heart"></i></div>
 
-  
+     <!-- tekst -->
+     <div class="tekst">Verlanglijst <i class="fas fa-angle-right"></i> </div>
+       <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
+       </a>
+      </div>
+      </div>
   </section>
-  </div> 
- 
- 
- 
- </main>
+  </div>
+  </main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
