@@ -30,25 +30,27 @@
       <img src="image/lego_avatar.png" width="" height="100px" alt="">
     </div>
     <div class="username"><h2>Jonasanne</h2></div>
+    <div class="align">
     <div class="sets"><span>sets:</span></div>
-    <hr>
+    
     <div class="sets"><span>parts:</span></div>
-    <hr>
+    
     <div class="sets"><span>geboren op:</span></div>
+    </div>
     </div>
   </section>
   
   <section class="content col-lg-8">
   
-    <div class="all-small-cards">
-      <div class="row">
+  <div class="all-small-cards">
+      
     <div class=" small-cards col-lg-4">
       <a href="">
       <!-- icon -->
-      <div class="icon"><i class="far fa-heart"></i></div>
+      <div class="icon"><i class="fas fa-shopping-bag"></i></div>
 
      <!-- tekst -->
-     <div class="tekst">Verlanglijst <i class="fas fa-angle-right"></i> </div>
+     <div class="tekst">Mijn collectie <i class="fas fa-angle-right"></i> </div>
        <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
        </a>
       </div>
@@ -72,7 +74,45 @@
        <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
        </a>
       </div>
-      </div>
+  </div>
+  
+  <div class="second-row">
+    <h3>Last bought</h3>  
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>Set_num</th>
+        <th>parts</th>
+        <th>buy date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+      
+    
+  
   </section>
   </div>
   </main>

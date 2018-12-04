@@ -27,7 +27,7 @@ header #minifigure {
 nav {
   height: 100px;
   display: flex !important;
-  background-color: #FDD92D;
+  background-color: #fdd900;
   align-items: center;
   justify-content: flex-end;
   height: auto;
@@ -120,7 +120,7 @@ div.link {
   align-content: center;
 }
 div.link a {
-  background-color: #FDD92D;
+  background-color: #fdd900;
   padding: 0.5rem;
   text-decoration: none;
   border-radius: 20px;
@@ -157,9 +157,73 @@ main#moc hr {
   background: #DB5461;
 }
 
+main#lego {
+  background-color: #F8F8F8;
+  min-height: 1080px;
+}
+main#lego div.color {
+  background-color: #56317e;
+  background-image: url("image/bgi.png");
+  background-position: center;
+  background-size: cover;
+}
+main#lego div.color div.container-fluid {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main#lego div.color div.container-fluid div.tekst {
+  display: flex;
+  align-items: flex-start;
+}
+main#lego div.color div.container-fluid div.tekst h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+}
+main#lego div.color div.container-fluid div.img {
+  display: flex;
+  flex-direction: column;
+}
+main#lego div.color div.container-fluid div.img img {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+main#lego div.color div.container-fluid div.img div.p {
+  align-self: center;
+}
+main#lego div.color div.container-fluid div.img div.p h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+main#lego div.color div.container-fluid div.img div.p p {
+  color: #fff;
+}
+main#lego div.sets div.cards {
+  margin-top: 20px;
+}
+main#lego div.sets div.cards div.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main#lego div.sets div.cards div.card:first-child {
+  margin-bottom: 20px;
+}
+main#lego div.sets div.cards div.card div.img {
+  background-color: pink;
+  width: 250px;
+  height: 250px;
+}
+
 main#account {
   background-color: #F8F8F8;
   font-family: "Lora", serif;
+  min-height: 1080px;
 }
 main#account div.container-fluid section#navigatie {
   padding-top: 100px;
@@ -196,19 +260,30 @@ main#account div.container-fluid section#navigatie div.profile div.sets span {
 main#account div.container-fluid section.content {
   margin-top: 100px;
   display: flex;
+  flex-direction: column;
+}
+main#account div.container-fluid section.content div.second-row {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+main#account div.container-fluid section.content div.second-row h3 {
+  text-align: center;
 }
 main#account div.container-fluid section.content div.all-small-cards {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 110px;
   justify-content: space-between;
 }
 main#account div.container-fluid section.content div.all-small-cards div.row {
   width: 100%;
+  height: 150px;
 }
 main#account div.container-fluid section.content div.all-small-cards div.small-cards {
   background-color: #fff;
-  max-height: 125px;
+  max-height: 130px;
   max-width: 250px;
   display: flex;
   justify-content: center;

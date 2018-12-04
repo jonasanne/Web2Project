@@ -14,14 +14,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.typekit.net/luj7bzd.css">
        <title>index</title>
 </head>
-<body id="body">
+<body id="body"> 
 <?php include_once 'include/header.php'; ?>
 
 
 
 <main id="lego">
+    <div class="color">
+        <div class="container-fluid">
+            <div class="tekst"><h1>find here the perfect <br> lego set for you.</h1></div>
+            <div class="img">
+        <img src="//static.bricklink.com/renovate/img/studio-landing/1989-batmobile.gif" alt="">
+        <div class="p">
+            <h2>Easy and fun to build!</h2>
+            <p>Here you can find the perfect lego set for you! for young and old!</p>
+
+        </div>
+        </div>
+        </div>
+
+
+    </div>
+    <div class="sets">
+        <div class="cards container-fluid">
+    <div class="card">
+    
+  <img src="image/lego.png" alt="">
+  <div class="card-body col-lg-9">
+      <h2>New 2019 lego star wars sets</h2>
+      <hr>
+    <p class="card-text">A minifig of Luke Skywalker (1999) will be featured in one of the 20th Anniversary sets! LEGO Star Wars celebrates its 20th Anniversary. We might get sets for the movie Star Wars Episode 9, scheduled for December 19, 2019. Set number for 37 sets are known. (See all Star Wars sets.)</p>
+  </div>
+</div>
+<div class="card ">
+    
+  <div class="card-body col-lg-9">
+      <h2>New 2019 lego overwatch sets</h2>
+      <hr>
+    <p class="card-text">One Overwatch sets has already been released (75987), with six to follow early January. All together, the six sets add figures of Overwatch characters Tracer, Widowmaker, Hanzo, Genji, Soldier: 76, McCree, D.Va, Reinhardt, Pharah, Mercy, Reaper, and Winston. (See all Overwatch sets.)</p>
+
+</div>
+<img src="image/lego.png" alt="">
+
+</div>
+</div>
+
+
+    </div>
 
     </main>
 
