@@ -13,11 +13,11 @@ $yellow: #fdd900;
 $red: #DB5461;
 $orange: #E3655B;
 $background:#F8F8F8;
-$font-prox:proxima-nova, sans-serif;
+$font-prox:proxima-nova,
+sans-serif;
 
 
 body {
-    font-family: $font;
 
 
     header {
@@ -259,53 +259,60 @@ main#moc {
     }
 
 }
-main#lego{
+
+main#lego {
     background-color: $background;
     min-height: 1080px;
 
-    div.color{
+    div.color {
         background-color: #56317e;
         background-image: url('image/bgi.png');
-        background-position:center;
+        background-position: center;
         background-size: cover;
-        div.container-fluid{
-                max-width: 1200px;
-                display: flex;
-                justify-content: space-evenly;
-                
 
-                div.tekst{
-                    display: flex;
-                    align-items: flex-start;
-                    h1{
-                        margin-top: $margin;
-                        font-size: 2rem;
-                        color: white;
-                        font-family: $font-prox;
-                        font-weight: 600;
-                        
-                    }
+        div.container-fluid {
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-evenly;
+
+
+            div.tekst {
+                display: flex;
+                align-items: flex-start;
+
+                h1 {
+                    margin-top: $margin;
+                    font-size: 2rem;
+                    color: white;
+                    font-family: $font-prox;
+                    font-weight: 600;
+
                 }
-            
-            div.img{
-                
+            }
+
+            div.img {
+
                 display: flex;
                 flex-direction: column;
-                img{
-                height: 200px;
-                width: 200px;
-                align-self: center;
-                }
-                div.p{
 
-                    
+                img {
+                    height: 200px;
+                    width: 200px;
                     align-self: center;
-                    h2{
-                        font-size:1.2rem;
+                }
+
+                div.p {
+
+
+                    align-self: center;
+
+                    h2 {
+                        font-size: 1.2rem;
                         color: #fff;
                         text-align: center;
                     }
-                    p{
+
+                    p {
                         color: #fff;
                     }
                 }
@@ -313,23 +320,27 @@ main#lego{
 
         }
     }
-    div.sets{
-        div.cards{
+
+    div.sets {
+        div.cards {
             margin-top: $margin;
-            div.card{
+
+            div.card {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                &:first-child{
+
+                &:first-child {
                     margin-bottom: $margin;
                 }
-                div.img{
+
+                div.img {
                     background-color: pink;
                     width: 250px;
                     height: 250px;
                 }
             }
-        }        
+        }
     }
 }
 
@@ -341,7 +352,7 @@ main#account {
     div.container-fluid {
         section#navigatie {
             padding-top: 100px;
-            
+
 
             display: flex;
 
@@ -383,95 +394,103 @@ main#account {
                 }
             }
 
-            
+
 
         }
-        section.content{
+
+        section.content {
             margin-top: 100px;
             display: flex;
             flex-direction: column;
-            div.second-row{
-                
+
+            div.second-row {
+
                 background-color: #fff;
                 margin-top: $margin;
                 padding: 1rem;
-               margin-bottom: $margin;
-               h3{
-                   text-align: center;
-               }
-               }
-               
+                margin-bottom: $margin;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
             div.all-small-cards {
                 display: flex;
                 width: 100%;
                 height: 110px;
                 justify-content: space-between;
-                div.row{
+
+                div.row {
                     width: 100%;
                     height: 150px;
                 }
 
-            div.small-cards {
-                background-color: #fff;
-                max-height: 130px;
-                max-width: 250px;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
+                div.small-cards {
+                    background-color: #fff;
+                    max-height: 130px;
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
 
-                a{
-                    text-decoration: none;
-                }
-                &:hover{
-                    div.icon{
-                        i{
-                            font-size: 4rem;
-                        }
-                    }
-                }
-
-                div.icon {
-                    position: relative;
-                    height: 45px;
-                    width: 60px;
-                    margin: 6px auto 12px;
-                    text-align: center;
-                    i{
-                        font-size: 3.5rem;
-                        color: black;
-                    }
-                }
-
-                div.tekst {
-                    text-align: center;
-                    text-decoration: none;
-                    color: black;
-                    &:hover{
+                    a {
                         text-decoration: none;
                     }
-                    
+
+                    &:hover {
+                        div.icon {
+                            i {
+                                font-size: 4rem;
+                            }
+                        }
+                    }
+
+                    div.icon {
+                        position: relative;
+                        height: 45px;
+                        width: 60px;
+                        margin: 6px auto 12px;
+                        text-align: center;
+
+                        i {
+                            font-size: 3.5rem;
+                            color: black;
+                        }
+                    }
+
+                    div.tekst {
+                        text-align: center;
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                    }
+
+
+
+                    &:first-child {
+                        margin-right: 10px;
+
+                    }
+
+                    &:last-child {
+                        margin-left: 10px;
+                    }
                 }
 
 
 
-                &:first-child {
-                    margin-right: 10px;
-
-                }
-
-                &:last-child {
-                    margin-left: 10px;
-                }
             }
-            
-            
 
+            div.article1 {
+                display: flex;
+                position: relative;
+            }
         }
-        div.article1{
-            display: flex;
-            position: relative;
-        }
-    }
 
     }
 
@@ -488,6 +507,75 @@ body#account {
     button {
         span {
             color: black;
+        }
+    }
+}
+
+main#detail {
+
+    div.container-fluid {
+        max-width: 1200px;
+        padding-top: $margin;
+        display: flex;
+        justify-content: center;
+        border-left: solid 2px $background;
+        border-right: solid 2px $background;
+
+
+        div.img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        div.content {
+            width: 100%;
+
+            border: solid 2px $background;
+
+            header {
+                display: flex;
+                justify-content: center;
+                padding-top: 1rem;
+
+                h2 {
+                    font-family: $font;
+                    border-bottom: solid 3px $background;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                padding-top: 2rem;
+
+                span {
+                    margin-top: $margin;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+
+                }
+            }
+        }
+
+    }
+
+    div.simular {
+        background-color: $background;
+        margin-top: $margin;
+
+        div.row {
+            div.card-deck {
+
+                margin: 0;
+            }
         }
     }
 }
@@ -511,6 +599,14 @@ body#account {
 }
 
 @media only screen and (max-width: 600px) {
+    main#detail {
+
+        div.container-fluid {
+            flex-direction: column;
+        }
+    }
+
+
     #minifigure {
         display: none;
     }

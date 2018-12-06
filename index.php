@@ -94,32 +94,32 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "60139" . "-1" . $authk
   <h2>Moc's</h2>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc2['set_num']) ?>"><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc2['set_num']) ?>"><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc3['set_num']) ?>"><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc3['set_num']) ?>"><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc4['set_num']) ?>"><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc4['set_num']) ?>"><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc5['set_num']) ?>"><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc5['set_num']) ?>"><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc6['set_num']) ?>"><img src="<?php  print($data_moc6['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc6['set_num']) ?>"><img src="<?php  print($data_moc6['moc_img_url']);?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc7['set_num']) ?>"><img src="<?php  print($data_moc7['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc7['set_num']) ?>"><img src="<?php  print($data_moc7['moc_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc8['set_num']) ?>"><img src="<?php  print($data_moc8['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc8['set_num']) ?>"><img src="<?php  print($data_moc8['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc9['set_num']) ?>"><img src="<?php  print($data_moc9['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc9['set_num']) ?>"><img src="<?php  print($data_moc9['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc10['set_num']) ?>"><img src="<?php  print($data_moc10['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc10['set_num']) ?>"><img src="<?php  print($data_moc10['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc11['set_num']) ?>"><img src="<?php  print($data_moc11['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc11['set_num']) ?>"><img src="<?php  print($data_moc11['moc_img_url']);?>" alt=""></a>
     </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_moc12['set_num']) ?>"><img src="<?php  print($data_moc12['moc_img_url']);?>" alt=""></a>
+    <a href="detail.php?moc=<?php print($data_moc12['set_num']) ?>"><img src="<?php  print($data_moc12['moc_img_url']);?>" alt=""></a>
     </div>
  
 

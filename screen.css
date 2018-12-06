@@ -1,5 +1,4 @@
 body {
-  font-family: "Lora", serif;
   margin: 0;
   padding: 0;
 }
@@ -332,12 +331,62 @@ body#account button span {
   color: black;
 }
 
+main#detail div.container-fluid {
+  max-width: 1200px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-left: solid 2px #F8F8F8;
+  border-right: solid 2px #F8F8F8;
+}
+main#detail div.container-fluid div.img img {
+  width: 100%;
+  height: auto;
+}
+main#detail div.container-fluid div.content {
+  width: 100%;
+  border: solid 2px #F8F8F8;
+}
+main#detail div.container-fluid div.content header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+main#detail div.container-fluid div.content header h2 {
+  font-family: "Lora", serif;
+  border-bottom: solid 3px #F8F8F8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main#detail div.container-fluid div.content article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+main#detail div.container-fluid div.content article span {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main#detail div.simular {
+  background-color: #F8F8F8;
+  margin-top: 20px;
+}
+main#detail div.simular div.row div.card-deck {
+  margin: 0;
+}
+
 @media only screen and (max-width: 995px) {
   nav {
     height: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
+  main#detail div.container-fluid {
+    flex-direction: column;
+  }
+
   #minifigure {
     display: none;
   }

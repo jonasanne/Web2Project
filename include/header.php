@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
     <ul>
-  <li class="active"><a href="index.php">Home</a></li>
+  <li class=""><a href="index.php">Home</a></li>
   <li><a href="moc.php">MOCs</a></li>
   <li><a href="lego.php">Lego</a></li>
   <li class=""><a href="account.php"><i class="fas fa-user-alt"></i>Account</a></li>
