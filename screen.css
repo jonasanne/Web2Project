@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
 body {
   margin: 0;
   padding: 0;
@@ -120,12 +121,15 @@ div.link {
 }
 div.link a {
   background-color: #fdd900;
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-decoration: none;
   border-radius: 20px;
   font-size: 1.2rem;
   color: black;
   font-weight: bold;
+}
+div.link a:hover {
+  background-color: #ffe444;
 }
 
 main#moc span#img_lego {
@@ -335,7 +339,7 @@ main#detail div.container-fluid {
   max-width: 1200px;
   padding-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   border-left: solid 2px #F8F8F8;
   border-right: solid 2px #F8F8F8;
 }
@@ -375,6 +379,309 @@ main#detail div.simular {
 }
 main#detail div.simular div.row div.card-deck {
   margin: 0;
+}
+main#detail div.simular div.row div.card-deck div.card div.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+body#login {
+  background-color: #fdd900;
+}
+
+body#register {
+  background-color: #fdd900;
+}
+
+main#login {
+  margin-top: 200px;
+  /* form Container */
+  /* the header form form */
+  /* Login title form form */
+  /*  A welcome message or an explanation of the login form */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* Show/hide password Font Icon */
+  /* inputs form  */
+  /* focus  */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* input[type="text"] {min-width: 250px;} */
+  /* buttons  */
+  /* Submits */
+  /*       Forgot Password button FAF3DD  */
+  /*     Sign Up button  */
+  /* buttons hover */
+  /* buttons hover Animation */
+}
+main#login form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px rgba(234, 177, 149, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #3891A6 50%, #E3655B 50%);
+}
+main#login form .con {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+main#login form .con div.other {
+  padding-right: 1.6rem;
+  display: flex;
+}
+main#login form .con div.other button.frgt-pass {
+  margin-right: 5px;
+}
+main#login header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+main#login header h2 {
+  font-size: 250%;
+  font-family: "Playfair Display", serif;
+  color: #3e403f;
+}
+main#login header p {
+  letter-spacing: 0.05em;
+}
+main#login .input-item {
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+  bottom: -1px;
+  position: relative;
+}
+main#login #eye {
+  background: #fff;
+  color: #333;
+  margin: 5.9px 0 0 0;
+  margin-left: -20px;
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -0.2%;
+  z-index: 5;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+main#login input[class=form-input] {
+  width: 250px;
+  height: 50px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+main#login input[id=txt-input] {
+  width: 250px;
+}
+main#login input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+main#login button {
+  display: inline-block;
+  color: #252537;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+main#login .submits {
+  width: 48%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+main#login .frgt-pass {
+  background: transparent;
+}
+main#login .sign-up {
+  background: #B8F2E6;
+}
+main#login button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+main#login button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+main#register {
+  margin-top: 200px;
+  /* form Container */
+  /* the header form form */
+  /* Login title form form */
+  /*  A welcome message or an explanation of the login form */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* Show/hide password Font Icon */
+  /* inputs form  */
+  /* focus  */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* input[type="text"] {min-width: 250px;} */
+  /* buttons  */
+  /* Submits */
+  /*       Forgot Password button FAF3DD  */
+  /*     Sign Up button  */
+  /* buttons hover */
+  /* buttons hover Animation */
+}
+main#register form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px rgba(234, 177, 149, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #3891A6 50%, #E3655B 50%);
+}
+main#register form .con {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+main#register form .con div.other {
+  padding-right: 1.6rem;
+  display: flex;
+}
+main#register form .con div.other button.frgt-pass {
+  margin-right: 5px;
+}
+main#register header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+main#register header h2 {
+  font-size: 250%;
+  font-family: "Playfair Display", serif;
+  color: #3e403f;
+}
+main#register header p {
+  letter-spacing: 0.05em;
+}
+main#register .input-item {
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+  bottom: -1px;
+  position: relative;
+}
+main#register #eye,
+main#register #eye1 {
+  background: #fff;
+  color: #333;
+  margin: 5.9px 0 0 0;
+  margin-left: -20px;
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -0.2%;
+  z-index: 5;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+main#register input[class=form-input] {
+  width: 250px;
+  height: 50px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+main#register input[id=txt-input] {
+  width: 250px;
+}
+main#register input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+main#register button {
+  display: inline-block;
+  color: #252537;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+main#register .submits {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+main#register .frgt-pass {
+  background: transparent;
+}
+main#register .sign-up {
+  background: #B8F2E6;
+}
+main#register button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+main#register button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 @media only screen and (max-width: 995px) {

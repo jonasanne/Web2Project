@@ -70,10 +70,12 @@ $data_moc3=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
 <hr>
 <div class="card-deck">
 <div class="card col-lg-3 col-md-4 col-sm-12" style="">
-  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
+  <a href=""><img class="card-img-top" src="<?php print($data_moc1['moc_img_url']); ?>" alt="Card image cap"></a>
   <div class="card-body">
-  <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <h5 class="card-title"><?php print($data_moc1['name']); ?></h5>
+    <span> parts: <?php print($data_moc1['num_parts']); ?></span>
+    <span> year: <?php print($data_moc1['year']); ?></span>
+    <span> number: <?php print($data_moc1['set_num']); ?></span>
   </div>
 </div>
 <div class="card col-lg-3 col-md-4 col-sm-12" style="">
