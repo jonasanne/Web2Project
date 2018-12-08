@@ -1,9 +1,46 @@
 <?php 
  include_once 'scripts/databaseconnect.php';
  //$checkusername = $_SESSION['username'];
-
+print_r($_POST);
 //controleren of username al bestaat
+if(!empty($_POST) ){
 
+   //Als de pagina gepost is & de email & pwd zijn geset
+   if(isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["password"]) && !empty($_POST["password"]) ){
+       //Check of geposte username al in de db zit
+       session_start();
+       $username = mysqli_real_escape_string($mysqli,$_POST['username']);
+       $password = mysqli_real_escape_string($mysqli,$_POST['password']);
+
+       $sql= "SELECT * FROM `account` WHERE `username` = '$username'";
+       $result = $mysqli->query($sql);
+       $user = $result->fetch_assoc();
+       print_r($user);
+       if($result != NULL){
+           //De gebruiker zit in de DB (gechecked op username)
+           $sugar = $user['password'];
+           $usernamecontrole = $user['username'];
+           if($sugar == md5($_POST["password"])){
+               //Het ingegeven wachtwoord komt overeen met het geïncripteerde wachtwoord in de DB
+               //Check of het vinkje "ingelogd blijven" is aangevinkt
+               $_SESSION["username"] = $username;
+               // print_r($_SESSION["email"]);
+               header("location:account.php");
+               exit;
+            }
+           else if($usernamecontrole != $_POST["username"]){
+               //De gebruiker zit NIET in de DB (gechecked op username)
+               $error="No active account was found for this email address.";
+           }
+           else{
+               //Het ingegeven wachtwoord komt niet overeen met het wachtwoord in de DB
+               $error = "The password is incorrect";
+           }
+       }
+   }else{
+      $_SESSION['message']='error';
+   }
+}
 
 
 
@@ -30,7 +67,7 @@
 <body id="login">
 <main id="login">
 <div class="overlay">
-<form method="post">
+<form method="post" action="<?php  print ($_SERVER['PHP_SELF']);  ?>">
    <div class="con">
    <header class="head-form">
       <h2>Log In</h2>
@@ -42,7 +79,7 @@
          <span class="input-item">
            <i class="fa fa-user-circle"></i>
          </span>
-         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" name="username" required>
+         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" name="username" >
      
       <br>
      
@@ -50,22 +87,11 @@
       <span class="input-item">
         <i class="fa fa-key"></i>
        </span>
-      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" >
      
      <span>
         <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
      </span>
-     <div>
-     <span class="input-item">
-        <i class="fa fa-key"></i>
-       </span>
-      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
-      
-     
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-     </span>
-     </div>
 
      
      
@@ -74,11 +100,12 @@
    </div>
   
    <div class="other">
-      <button class="btn submits frgt-pass">Forgot Password</button>
-
-      <button  class="btn submits sign-up" >Sign Up 
+    
+      <a  class="signup" href="register.php">
+      <div  class="btn submits sign-up test">Sign Up 
       <i class="fa fa-user-plus" aria-hidden="true"></i>
-      </button>
+</div>
+      </a>
    </div>
 
      

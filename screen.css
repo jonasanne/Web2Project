@@ -413,6 +413,7 @@ main#login {
   /*     Sign Up button  */
   /* buttons hover */
   /* buttons hover Animation */
+  /* buttons hover Animation */
 }
 main#login form {
   width: 450px;
@@ -434,8 +435,8 @@ main#login form .con {
   margin: 0 auto;
 }
 main#login form .con div.other {
-  padding-right: 1.6rem;
   display: flex;
+  justify-content: space-between;
 }
 main#login form .con div.other button.frgt-pass {
   margin-right: 5px;
@@ -511,10 +512,28 @@ main#login button {
   letter-spacing: 0.05em;
 }
 main#login .submits {
-  width: 48%;
   display: inline-block;
   float: left;
   margin-left: 2%;
+  color: #4C5B5C;
+}
+main#login a.signup {
+  display: flex;
+  align-items: center;
+}
+main#login a.signup:hover {
+  text-decoration: none;
+  color: #333;
+}
+main#login button.sign-up {
+  display: flex;
+  width: 120px;
+  align-content: center;
+}
+main#login button.sign-up i {
+  position: relative;
+  right: -10px;
+  top: 5px;
 }
 main#login .frgt-pass {
   background: transparent;
@@ -527,6 +546,13 @@ main#login button:hover {
   box-shadow: none;
 }
 main#login button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+main#login div.test:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+main#login div.test:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
 }
 @keyframes ani9 {

@@ -5,11 +5,11 @@ $_SESSION['message'] = "";
 
 if ($_SERVER['REQUEST_METHOD']== 'POST') {
       //variabele aanmaken van de post
-      $username = $mysqli->real_escape_string($_POST['username']);
-      $email = $mysqli->real_escape_string($_POST['email']);
+      $username = $mysqli->real_escape_string($mysqli,$_POST['username']);
+      $email = $mysqli->real_escape_string($mysqli,$_POST['email']);
       $password = md5($_POST['password']);
       $_SESSION['username'] =$username;
-        $_SESSION['email'] =$email;
+      $_SESSION['email'] =$email;
       //controleer of de passworden gelijk aan elkaar zijn
     if($_POST['password'] == $_POST['confirmpassword']){
       //als de 2 passworden hetzelfde zijn
@@ -59,11 +59,11 @@ if ($_SERVER['REQUEST_METHOD']== 'POST') {
 <body id="register">
 <main id="register">
 <div class="overlay">
-<form method="post">
+<form method="post" action="<?php  print ($_SERVER['PHP_SELF']);  ?>">
    <div class="con">
    <header class="head-form">
       <h2>Register</h2>
-      <p>Register here using a username, email and password</p>
+      <p>Register here for your own account!</p>
    </header>
    <br>
    <div class="field-set">

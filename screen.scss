@@ -629,8 +629,8 @@ main#login {
         margin: 0 auto;
 
         div.other {
-            padding-right: 1.6rem;
             display: flex;
+            justify-content: space-between;
 
             button.frgt-pass {
                 margin-right: 5px;
@@ -754,10 +754,34 @@ main#login {
 
     /* Submits */
     .submits {
-        width: 48%;
         display: inline-block;
         float: left;
         margin-left: 2%;
+        color: $black;
+
+
+    }
+
+    a.signup {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+            color: #333;
+        }
+    }
+
+    button.sign-up {
+        display: flex;
+        width: 120px;
+        align-content: center;
+
+        i {
+            position: relative;
+            right: -10px;
+            top: 5px;
+        }
     }
 
     /*       Forgot Password button FAF3DD  */
@@ -776,9 +800,19 @@ main#login {
         transform: translatey(3px);
         box-shadow: none;
     }
-
+    
     /* buttons hover Animation */
     button:hover {
+        animation: ani9 0.4s ease-in-out infinite alternate;
+    }
+
+    div.test:hover {
+        transform: translatey(3px);
+        box-shadow: none;
+    }
+
+    /* buttons hover Animation */
+    div.test:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
 
@@ -821,9 +855,13 @@ main#register {
 
         margin: 0 auto;
 
+
+
         div.other {
             padding-right: 1.6rem;
             display: flex;
+
+
 
             button.frgt-pass {
                 margin-right: 5px;
