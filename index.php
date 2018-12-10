@@ -69,13 +69,13 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authk
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="image/falcon.jpg" alt="First slide">
+      <img class="d-block w-100" src="image/carousel2.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="image/castle.jpg" alt="Second slide">
+      <img class="d-block w-100" src="image/carousel1.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="image/aragog.jpg" alt="Third slide">
+      <img class="d-block w-100" src="image/carousel3.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -131,40 +131,40 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authk
   <h2>Lego</h2>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set1['set_num']) ?>"><img src="<?php  print($data_set1['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set1['set_num']); ?>"><img src="<?php  print($data_set1['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set2['set_num']) ?>"><img src="<?php  print($data_set2['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set2['set_num']); ?>"><img src="<?php  print($data_set2['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set3['set_num']) ?>"><img src="<?php  print($data_set3['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set3['set_num']); ?>"><img src="<?php  print($data_set3['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set4['set_num']) ?>"><img src="<?php  print($data_set4['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set4['set_num']); ?>"><img src="<?php  print($data_set4['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set5['set_num']) ?>"><img src="<?php  print($data_set5['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set5['set_num']); ?>"><img src="<?php  print($data_set5['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set6['set_num']) ?>"><img src="<?php  print($data_set6['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set6['set_num']); ?>"><img src="<?php  print($data_set6['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set7['set_num']) ?>"><img src="<?php  print($data_set7['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set7['set_num']); ?>"><img src="<?php  print($data_set7['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set8['set_num']) ?>"><img src="<?php  print($data_set8['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set8['set_num']); ?>"><img src="<?php  print($data_set8['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set9['set_num']) ?>"><img src="<?php  print($data_set9['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set9['set_num']); ?>"><img src="<?php  print($data_set9['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set10['set_num']) ?>"><img src="<?php  print($data_set10['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set10['set_num']); ?>"><img src="<?php  print($data_set10['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set11['set_num']) ?>"><img src="<?php  print($data_set11['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set11['set_num']); ?>"><img src="<?php  print($data_set11['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set12['set_num']) ?>"><img src="<?php  print($data_set12['set_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set12['set_num']); ?>"><img src="<?php  print($data_set12['set_img_url']);   ?>" alt=""></a>
     </div>
     
     

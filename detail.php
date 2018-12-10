@@ -19,11 +19,9 @@ $data=json_decode(file_get_contents($number), true);
 $url_moc = $url_sets = "https://rebrickable.com/api/v3/lego/mocs/MOC-";
 $url_sets = "https://rebrickable.com/api/v3/lego/sets/";
 $data_set1 = json_decode(file_get_contents( $url_sets . "41332" . "-1" . $authkey), true);
-$data_set2 = json_decode(file_get_contents( $url_sets . "41314" . "-1" . $authkey), true);
-$data_set3 = json_decode(file_get_contents( $url_sets . "60139" . "-1" . $authkey), true);
+$data_set2 = json_decode(file_get_contents( $url_sets . "60139" . "-1" . $authkey), true);
 $data_moc1=json_decode(file_get_contents($url_moc . "14637" . $authkey), true);
 $data_moc2=json_decode(file_get_contents($url_moc . "13424" . $authkey), true);
-$data_moc3=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
 
 
 
@@ -52,7 +50,7 @@ $data_moc3=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
 <div class="container-fluid">
 <div class="top">
   <div class="left">
-<img src=" <?php print($data[$img]); ?>"  alt="">
+    <img src=" <?php print($data[$img]); ?>"  alt="">
 
   </div>
   <div class="right">
@@ -71,7 +69,58 @@ $data_moc3=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
       </div>
 
   </div>
+</div>
+<div class="section">People also like:</div>
+<div class="cards">
+<div class="row">
+<div class="card-deck">
+<div class="card col-lg-3 col-md-4 col-sm-12" style="">
+  <a href="detail.php?moc=<?php print($data_moc1['set_num']); ?>"><img class="card-img-top" src=" <?php print($data_moc1['moc_img_url']) ?>" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title"><?php print($data_moc1['name']); ?></h5>
+    <div class="card-text">
+      <div class="set_num"><span>number: </span> <?php print($data_moc1['set_num']); ?></div>
+      <div class="parts"><span> parts: </span><?php print($data_moc1['num_parts']); ?></div>
+      <div class="year"><span> year: </span> <?php print($data_moc1['year']); ?></div>
+    </div>
   </div>
+</div>
+<div class="card col-lg-3 col-md-4 col-sm-12" style="">
+  <a href="detail.php?nummer=<?php print($data_set1['set_num']); ?>"><img class="card-img-top" src=" <?php print($data_set1['set_img_url']) ?>" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title"><?php print($data_set1['name']); ?></h5>
+    <div class="card-text">
+      <div class="set_num"><span>number: </span> <?php print($data_set1['set_num']); ?></div>
+      <div class="parts"><span> parts: </span><?php print($data_set1['num_parts']); ?></div>
+      <div class="year"><span> year: </span> <?php print($data_set1['year']); ?></div>
+    </div>
+  </div>
+</div>
+<div class="card col-lg-3 col-md-4 col-sm-12" style="">
+  <a href="detail.php?moc=<?php print($data_moc2['set_num']); ?>"><img class="card-img-top" src=" <?php print($data_moc2['moc_img_url']) ?>" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title"><?php print($data_moc2['name']); ?></h5>
+    <div class="card-text">
+      <div class="set_num"><span>number: </span> <?php print($data_moc2['set_num']); ?></div>
+      <div class="parts"><span> parts: </span><?php print($data_moc2['num_parts']); ?></div>
+      <div class="year"><span> year: </span> <?php print($data_moc2['year']); ?></div>
+    </div>
+  </div>
+</div>
+<div class="card col-lg-3 col-md-4 col-sm-12" style="">
+  <a href="detail.php?nummer=<?php print($data_set2['set_num']); ?>"><img class="card-img-top" src=" <?php print($data_set2['set_img_url']) ?>" alt="Card image cap"></a>
+  <div class="card-body">
+  <h5 class="card-title"><?php print($data_moc1['name']); ?></h5>
+    <div class="card-text">
+      <div class="set_num"><span>number :</span> <?php print($data_set2['set_num']); ?></div>
+      <div class="parts"><span> parts: </span><?php print($data_set2['num_parts']); ?></div>
+      <div class="year"><span> year: </span> <?php print($data_set2['year']); ?></div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
 </div>
 
 

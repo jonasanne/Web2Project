@@ -273,6 +273,7 @@ main#lego {
     min-height: 1080px;
 
     div.color {
+        margin-top: $margin;
         background-color: #56317e;
         background-image: url('image/bgi.png');
         background-position: center;
@@ -536,6 +537,52 @@ main#detail {
         max-width: 1000px;
         padding-top: $margin;
         background-color: #fff;
+        padding-left:0 ; 
+        padding-right:0 ; 
+        div.section{
+            width: 100%;
+            height: 50px;
+            background-color: $background;
+            margin-top: $margin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        div.cards{
+            margin-top: $margin;
+        }
+        div.cards{
+            background-color: #fff;
+            width: 100%;
+            display: flex;
+            padding: 0.5rem;
+            div.row{
+                margin: 0;
+                div.card-deck{
+                    div.card{
+                        padding: 0;
+                        a{
+                            img{
+                                padding: 0.5rem;
+                            }
+                        }
+                        div.card-body{
+                            div{
+                                div{
+                                    font-size: 1.1rem;
+                                   span{
+                                       font-weight: 500;
+                                   } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
         div.top{
             display: flex;
             justify-content: space-around;
@@ -668,7 +715,7 @@ main#login {
 
         div.other {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
 
             button.frgt-pass {
                 margin-right: 5px;

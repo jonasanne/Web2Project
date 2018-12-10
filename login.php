@@ -72,7 +72,7 @@ if(!empty($_POST) ){
       <h2>Log In</h2>
       <p>login here using your username and password</p>
    </header>
-   <br>
+   <div class="main">
    <div class="field-set">
      
          <span class="input-item">
@@ -105,6 +105,7 @@ if(!empty($_POST) ){
       <i class="fa fa-user-plus" aria-hidden="true"></i>
 </div>
       </a>
+   </div>
    </div>
 
      
