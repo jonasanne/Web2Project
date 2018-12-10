@@ -260,6 +260,13 @@ main#account div.container-fluid section#navigatie div.profile div.username {
 main#account div.container-fluid section#navigatie div.profile div.sets span {
   font-size: 1.2rem;
 }
+main#account div.container-fluid section#navigatie div.profile div.btn {
+  width: 100%;
+  margin-top: 20px;
+}
+main#account div.container-fluid section#navigatie div.profile div.btn:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
 main#account div.container-fluid section.content {
   margin-top: 100px;
   display: flex;
@@ -335,54 +342,99 @@ body#account button span {
   color: black;
 }
 
-main#detail div.container-fluid {
-  max-width: 1200px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  border-left: solid 2px #F8F8F8;
-  border-right: solid 2px #F8F8F8;
-}
-main#detail div.container-fluid div.img img {
-  width: 100%;
-  height: auto;
-}
-main#detail div.container-fluid div.content {
-  width: 100%;
-  border: solid 2px #F8F8F8;
-}
-main#detail div.container-fluid div.content header {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
-main#detail div.container-fluid div.content header h2 {
-  font-family: "Lora", serif;
-  border-bottom: solid 3px #F8F8F8;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-main#detail div.container-fluid div.content article {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-}
-main#detail div.container-fluid div.content article span {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-main#detail div.simular {
+body#detail {
   background-color: #F8F8F8;
+}
+
+main#detail div.container-fluid {
+  max-width: 1000px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+main#detail div.container-fluid div.top {
+  display: flex;
+  justify-content: space-around;
+}
+main#detail div.container-fluid div.top div.left img {
+  max-width: 400px;
+  height: auto;
+  border: solid 3px #f4f3f3;
+  border-radius: 20px;
+}
+main#detail div.container-fluid div.top div.right {
+  max-width: 430px;
+  width: 100%;
+}
+main#detail div.container-fluid div.top div.right div.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main#detail div.container-fluid div.top div.right div.title h2 {
+  border-bottom: solid 3px #f4f3f3;
+  width: 100%;
+  text-align: center;
+}
+main#detail div.container-fluid div.top div.right div.information {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
 }
-main#detail div.simular div.row div.card-deck {
-  margin: 0;
-}
-main#detail div.simular div.row div.card-deck div.card div.card-body {
+main#detail div.container-fluid div.top div.right div.information div.number {
+  background-color: #fdd900;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  min-width: 100px;
   display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
   flex-direction: column;
+}
+main#detail div.container-fluid div.top div.right div.information div.number div.align {
+  display: flex;
+  justify-content: center;
+}
+main#detail div.container-fluid div.top div.right div.information div.parts {
+  background-color: #fdd900;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-direction: column;
+  min-width: 100px;
+}
+main#detail div.container-fluid div.top div.right div.information div.parts div.align {
+  display: flex;
+  justify-content: center;
+}
+main#detail div.container-fluid div.top div.right div.information div.year {
+  background-color: #fdd900;
+  width: 100px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-direction: column;
+}
+main#detail div.container-fluid div.top div.right div.information div.year div.align {
+  display: flex;
+  justify-content: center;
+}
+main#detail div.container-fluid div.top div.right div.btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* buttons hover Animation */
+}
+main#detail div.container-fluid div.top div.right div.btn button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+main#detail div.container-fluid div.top div.right div.btn button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
 }
 
 body#login {
@@ -395,25 +447,6 @@ body#register {
 
 main#login {
   margin-top: 200px;
-  /* form Container */
-  /* the header form form */
-  /* Login title form form */
-  /*  A welcome message or an explanation of the login form */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
-  /* Show/hide password Font Icon */
-  /* inputs form  */
-  /* focus  */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
-  /* input[type="text"] {min-width: 250px;} */
-  /* buttons  */
-  /* Submits */
-  /*       Forgot Password button FAF3DD  */
-  /*     Sign Up button  */
-  /* buttons hover */
-  /* buttons hover Animation */
-  /* buttons hover Animation */
 }
 main#login form {
   width: 450px;
@@ -763,6 +796,16 @@ main#register button:hover {
 
   main div#carouselExampleIndicators {
     display: none;
+  }
+
+  main#detail div.container-fluid {
+    max-width: 1000px;
+    padding-top: 20px;
+    background-color: #fff;
+  }
+  main#detail div.container-fluid div.top {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -46,59 +46,34 @@ $data_moc3=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <title>detail</title>
 </head>
-<body id="body">
+<body id="detail">
 <?php include_once 'include/header.php'; ?>
- <main id="detail">
- <div class="container-fluid">
-  <div class="img col-lg-6 col-md-6">
-  <img src="<?php print($data[$img]) ?>" alt=""></div>
-  <div class="content col-lg-4 col-md-4">
-    <header>
-    <h2><?php print($data['name']); ?></h2>
-    </header>
-    <article>
-      <span>number: <?php print($data['set_num']);  ?></span>
-      <span>parts :<?php print($data['num_parts']);  ?></span>
-      <span>year: <?php print($data['year']);  ?></span>
-    </article>
-  </div>
-</div>
-<div class="simular container-fluid ">
+<main id="detail">
+<div class="container-fluid">
+<div class="top">
+  <div class="left">
+<img src=" <?php print($data[$img]); ?>"  alt="">
 
-  <div class="row">
-  <h2>Similar</h2>
-<hr>
-<div class="card-deck">
-<div class="card col-lg-3 col-md-4 col-sm-12" style="">
-  <a href=""><img class="card-img-top" src="<?php print($data_moc1['moc_img_url']); ?>" alt="Card image cap"></a>
-  <div class="card-body">
-  <h5 class="card-title"><?php print($data_moc1['name']); ?></h5>
-    <span> parts: <?php print($data_moc1['num_parts']); ?></span>
-    <span> year: <?php print($data_moc1['year']); ?></span>
-    <span> number: <?php print($data_moc1['set_num']); ?></span>
+  </div>
+  <div class="right">
+    <div class="title">
+      <h2><?php print($data['name']); ?> </h2>
+    </div>
+    <div class="information">      
+      <div class="number"> <div class="align">number</div>   <div class="align"><?php print($data['set_num']); ?></div> </div>
+      <div class="parts"><div class="align">parts</div>  <div class="align"><?php print($data['num_parts']); ?></div> </div>
+      <div class="year"> <div class="align">year</div>  <div class="align"><?php print($data['year']); ?></div> </div>
+    </div>
+    <div class="btn">
+    <a href="#">
+    <button  class="btn submits sign-up" >Add to wishlist </button>
+      </a>
+      </div>
+
+  </div>
   </div>
 </div>
-<div class="card col-lg-3 col-md-4 col-sm-12" style="">
-  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
-  <div class="card-body">
-  <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card col-lg-3 col-md-4 col-sm-12" style="">
-  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
-  <div class="card-body">
-  <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card col-lg-3 col-md-4 col-sm-12" style="">
-  <a href=""><img class="card-img-top" src="image/moc's/bus.jpg" alt="Card image cap"></a>
-  <div class="card-body">
-  <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
+
 
 
  </main>

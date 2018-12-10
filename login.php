@@ -1,7 +1,6 @@
 <?php 
  include_once 'scripts/databaseconnect.php';
  //$checkusername = $_SESSION['username'];
-print_r($_POST);
 //controleren of username al bestaat
 if(!empty($_POST) ){
 

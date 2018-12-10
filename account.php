@@ -1,6 +1,8 @@
 <?php
 session_start();
-print($_SESSION['username']);
+if(!isset($_SESSION['username'])){
+   header("Location:Login.php");
+}
 
 ?>
 <!DOCTYPE html>
@@ -34,13 +36,18 @@ print($_SESSION['username']);
       <div class="img">
       <img src="image/lego_avatar.png" width="" height="100px" alt="">
     </div>
-    <div class="username"><h2>Jonasanne</h2></div>
+    <div class="username"><h2><?php print($_SESSION['username']); ?></h2></div>
     <div class="align">
     <div class="sets"><span>sets:</span></div>
     
     <div class="sets"><span>parts:</span></div>
     
     <div class="sets"><span>geboren op:</span></div>
+    <div class="btn">
+    <a href="logout.php">
+    <button  class="btn submits sign-up" >Sign out </button>
+      </a>
+      </div>
     </div>
     </div>
   </section>

@@ -5,8 +5,8 @@ $_SESSION['message'] = "";
 
 if ($_SERVER['REQUEST_METHOD']== 'POST') {
       //variabele aanmaken van de post
-      $username = $mysqli->real_escape_string($mysqli,$_POST['username']);
-      $email = $mysqli->real_escape_string($mysqli,$_POST['email']);
+      $username = $mysqli->real_escape_string($_POST['username']);
+      $email = $mysqli->real_escape_string($_POST['email']);
       $password = md5($_POST['password']);
       $_SESSION['username'] =$username;
       $_SESSION['email'] =$email;

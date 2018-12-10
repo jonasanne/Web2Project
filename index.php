@@ -15,7 +15,7 @@ $data_moc2=json_decode(file_get_contents($url_moc . "15881" . $authkey), true);
 $data_moc3=json_decode(file_get_contents($url_moc . "19683" . $authkey), true);
 $data_moc4=json_decode(file_get_contents($url_moc . "14898" . $authkey), true);
 $data_moc5=json_decode(file_get_contents($url_moc . "15292" . $authkey), true);
-$data_moc6=json_decode(file_get_contents($url_moc . "15594" . $authkey), true);
+$data_moc6=json_decode(file_get_contents($url_moc . "19950" . $authkey), true);
 $data_moc7=json_decode(file_get_contents($url_moc . "16003" . $authkey), true);
 $data_moc8=json_decode(file_get_contents($url_moc . "13999" . $authkey), true);
 $data_moc9=json_decode(file_get_contents($url_moc . "17649" . $authkey), true);
@@ -36,9 +36,8 @@ $data_set8 = json_decode(file_get_contents( $url_sets . "75187" . "-1" . $authke
 $data_set9 = json_decode(file_get_contents( $url_sets . "60197" . "-1" . $authkey), true);
 $data_set10 = json_decode(file_get_contents( $url_sets . "41332" . "-1" . $authkey), true);
 $data_set11 = json_decode(file_get_contents( $url_sets . "41314" . "-1" . $authkey), true);
-$data_set12 = json_decode(file_get_contents( $url_sets . "60139" . "-1" . $authkey), true);
+$data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authkey), true);
 
-print($data_moc6['moc_img_url']);
 ?>
 
 <!DOCTYPE html>
@@ -93,7 +92,7 @@ print($data_moc6['moc_img_url']);
   <h2>Moc's</h2>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt="" onerror="this.src='image/'></a>
+    <a href="detail.php?moc=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
     <a href="detail.php?moc=<?php print($data_moc2['set_num']) ?>"><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
@@ -165,7 +164,7 @@ print($data_moc6['moc_img_url']);
     <a href="detail.php?nummer=<?php print($data_set11['set_num']) ?>"><img src="<?php  print($data_set11['set_img_url']);   ?>" alt=""></a>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set12['set_num']) ?>"><img src="<?php  print($data_moc12['moc_img_url']);   ?>" alt=""></a>
+    <a href="detail.php?nummer=<?php print($data_set12['set_num']) ?>"><img src="<?php  print($data_set12['set_img_url']);   ?>" alt=""></a>
     </div>
     
     
