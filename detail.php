@@ -16,6 +16,7 @@
 }
 $data=json_decode(file_get_contents($number), true);
 
+
 $url_moc = $url_sets = "https://rebrickable.com/api/v3/lego/mocs/MOC-";
 $url_sets = "https://rebrickable.com/api/v3/lego/sets/";
 $data_set1 = json_decode(file_get_contents( $url_sets . "41332" . "-1" . $authkey), true);
@@ -63,7 +64,13 @@ $data_moc2=json_decode(file_get_contents($url_moc . "13424" . $authkey), true);
       <div class="year"> <div class="align">year</div>  <div class="align"><?php print($data['year']); ?></div> </div>
     </div>
     <div class="btn">
-    <a href="#">
+    <a href="add_wishlist.php?<?php
+    if(isset($_GET['moc'])) {
+      print("moc=".$_GET['moc']);
+} else {
+      print("nummer=".$_GET['nummer']);
+  
+} ?>">
     <button  class="btn submits sign-up" >Add to wishlist </button>
       </a>
       </div>

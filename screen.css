@@ -64,9 +64,14 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+body#index {
+  background-color: #F8F8F8;
+}
+
 main#home {
   font-family: "Lora", serif;
   background-color: #F8F8F8;
+  height: 100%;
 }
 main#home div#moc h2 {
   text-align: center;
@@ -145,15 +150,27 @@ main#moc .new-moc h2 {
   font-family: "Lora", serif;
   font-weight: bold;
 }
-main#moc div.container div.row .card {
-  box-sizing: border-box;
-  max-width: 250px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+main#moc div.container-fluid div.row {
+  margin: 0;
 }
-main#moc div.container div.row .card a img {
+main#moc div.container-fluid div.row .card {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+main#moc div.container-fluid div.row .card div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main#moc div.container-fluid div.row .card div.card-body div.card-text div span {
+  font-weight: 500;
+}
+main#moc div.container-fluid div.row .card a img {
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 main#moc hr {
   margin-top: 0;
@@ -219,9 +236,17 @@ main#lego div.sets div.cards div.card:first-child {
   margin-bottom: 20px;
 }
 main#lego div.sets div.cards div.card div.img {
-  background-color: pink;
   width: 250px;
   height: 250px;
+}
+main#lego div.sets div.cards div.card a {
+  color: black;
+}
+main#lego div.sets div.cards div.card a:hover {
+  text-decoration: none;
+}
+main#lego div.sets div.cards div.card p.card-text {
+  font-size: 1.2rem;
 }
 
 main#account {
@@ -465,7 +490,6 @@ main#detail div.container-fluid div.top div.right div.btn {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* buttons hover Animation */
 }
 main#detail div.container-fluid div.top div.right div.btn button:hover {
   transform: translatey(3px);
@@ -637,24 +661,6 @@ main#login div.test:hover {
 
 main#register {
   margin-top: 200px;
-  /* form Container */
-  /* the header form form */
-  /* Login title form form */
-  /*  A welcome message or an explanation of the login form */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
-  /* Show/hide password Font Icon */
-  /* inputs form  */
-  /* focus  */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
-  /* input[type="text"] {min-width: 250px;} */
-  /* buttons  */
-  /* Submits */
-  /*       Forgot Password button FAF3DD  */
-  /*     Sign Up button  */
-  /* buttons hover */
-  /* buttons hover Animation */
 }
 main#register form {
   width: 450px;
@@ -781,6 +787,18 @@ main#register button:hover {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  main#lego div.color {
+    display: none;
+  }
+
+  div.container-fluid div.row {
+    justify-content: space-evenly;
+  }
+  div.container-fluid div.row .card {
+    max-width: 300px;
+  }
+}
 @media only screen and (max-width: 995px) {
   nav {
     height: 100%;
@@ -789,6 +807,10 @@ main#register button:hover {
 @media only screen and (max-width: 600px) {
   main#detail div.container-fluid {
     flex-direction: column;
+  }
+
+  main#lego div.color {
+    display: none;
   }
 
   #minifigure {
@@ -844,6 +866,20 @@ main#register button:hover {
   main#detail div.container-fluid div.top {
     display: flex;
     flex-direction: column;
+  }
+  div.sets div.cards {
+    margin-top: 20px;
+  }
+  div.sets div.cards div.card {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  div.sets div.cards div.card img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 

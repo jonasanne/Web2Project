@@ -20,6 +20,7 @@ $font-prox:proxima-nova,
 sans-serif;
 
 
+
 body {
 
 
@@ -49,13 +50,11 @@ body {
 }
 
 header {
-    // background-color: $accent;
     height: auto;
 
     #minifigure {
         max-width: 110px;
         max-height: 100px;
-        //top: -20px;
         position: relative;
     }
 
@@ -74,7 +73,6 @@ nav {
         margin: 0;
 
         li {
-            //background-color: yellow;
             list-style-type: none;
             float: left;
             font-size: 1.7rem;
@@ -84,126 +82,87 @@ nav {
 
             font-weight: bold;
             transition: 0.2s;
-
-
-
             i {
                 margin-right: 10px;
             }
-
-
-
             & img {
                 top: 20px;
                 height: auto;
                 max-width: 100px;
-
             }
-
             a {
                 color: black;
-
                 &:hover {
                     color: $black;
                 }
             }
-
             a:hover {
                 text-decoration: none;
             }
         }
     }
-
 }
 
+body#index{
+    background-color: $background;
+}
 main#home {
     font-family: $font;
     background-color: $background;
-
-
+    height: 100%;
     div#moc {
-
         h2 {
             text-align: center;
             margin-top: $margin;
         }
-
         div.row>div {
             width: auto;
             height: auto;
-            //padding: 0;
             margin: auto;
         }
-
         div.row a img {
             margin-top: $margin;
-            //max-width: $img-width;
-            //max-height: $img-height;
             width: 100%;
             height: auto;
             box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
-
             border-radius: 15px;
-
             &:hover {
                 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
-
             }
-
-
         }
-
         button {
             margin-top: $margin;
-
             font-size: 1.3rem;
             margin-bottom: 20px;
-            ;
-
             a {
                 text-decoration: none;
                 color: black;
-
             }
         }
     }
-
     div.container article {
-        //border: solid 1px black;
         margin-top: $margin;
         max-width: $width;
         border-radius: 15px;
         padding: 1rem;
         margin-bottom: $margin;
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-
-
         &:first-child {
             margin-left: auto;
             margin-right: auto;
         }
-
         &:last-child {
             margin-left: auto;
             margin-right: auto;
         }
-
-
-
     }
-
-
-
 }
-
 div.link {
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-content: center;
-
     a {
-
         background-color: $yellow;
         padding: 0.8rem;
         text-decoration: none;
@@ -211,24 +170,17 @@ div.link {
         font-size: 1.2rem;
         color: black;
         font-weight: bold;
-
         &:hover {
             background-color: #ffe444;
         }
-
-
     }
 }
-
 main#moc {
-    div.container-fluid {}
-
     span#img_lego {
         display: flex;
         justify-content: center;
         background-color: $blue;
     }
-
     .new-moc {
         h2 {
             display: flex;
@@ -239,46 +191,51 @@ main#moc {
             font-weight: bold;
         }
     }
-
-    div.container {
-        div.row {
-
-            .card {
-                //margin-top: $margin;
-                box-sizing: border-box;
-                max-width: 250px;
-                margin: 0 auto;
-                margin-bottom: $margin;
-
-                a {
-                    img {
-                        width: 100%;
-                        height: auto;
+    div.container-fluid {
+        div.row {  
+            margin: 0;
+            
+                .card {
+                    box-sizing: border-box;
+                    margin-bottom: $margin;
+                    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+                    border-radius: 15px;
+                    
+                    div.card-body{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        div.card-text{
+                            div span{
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    a {
+                        img {
+                            width: 100%;
+                            height: auto;
+                            margin-top: $margin-thumbnail;
+                        }
                     }
                 }
-            }
+            
         }
     }
-
     hr {
         margin-top: 0;
         background: $red;
-
     }
-
 }
-
 main#lego {
     background-color: $background;
     min-height: 1080px;
-
     div.color {
         margin-top: $margin;
         background-color: #56317e;
         background-image: url('image/bgi.png');
         background-position: center;
         background-size: cover;
-
         div.container-fluid {
             max-width: 1200px;
             display: flex;
@@ -329,73 +286,65 @@ main#lego {
 
         }
     }
-
     div.sets {
         div.cards {
             margin-top: $margin;
-
             div.card {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
                 &:first-child {
                     margin-bottom: $margin;
                 }
-
                 div.img {
-                    background-color: pink;
                     width: 250px;
                     height: 250px;
+                }
+                a{
+                    color: black;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                p.card-text{
+                    font-size: 1.2rem;
                 }
             }
         }
     }
 }
-
 main#account {
     background-color: $background;
     font-family: $font;
     min-height: 1080px;
-
     div.container-fluid {
         section#navigatie {
             padding-top: 100px;
-
-
             display: flex;
-
             article#content {
                 background-color: #fff;
                 margin-left: $margin;
                 margin-bottom: $margin;
-
             }
-
             div.profile {
                 background-color: #fff;
                 padding: 1.2rem;
                 width: 100%;
-
                 hr {
                     background: $blue;
                     margin-top: 5px;
                     margin-bottom: 5px;
                 }
-
                 div.img {
                     display: flex;
                     justify-content: center;
                     margin-top: $margin;
-
                 }
-
                 div.username {
                     display: flex;
                     justify-content: center;
                     margin-top: $margin-thumbnail;
                 }
-
                 div.sets {
                     span {
                         font-size: 1.2rem;
@@ -406,43 +355,32 @@ main#account {
                     margin-top: $margin;
                     &:hover{
                         animation: ani9 0.4s ease-in-out infinite alternate;
-
                     }
                 }
             }
-
-
-
         }
-
         section.content {
             margin-top: 100px;
             display: flex;
             flex-direction: column;
-
             div.second-row {
-
                 background-color: #fff;
                 margin-top: $margin;
                 padding: 1rem;
                 margin-bottom: $margin;
-
                 h3 {
                     text-align: center;
                 }
             }
-
             div.all-small-cards {
                 display: flex;
                 width: 100%;
                 height: 110px;
                 justify-content: space-between;
-
                 div.row {
                     width: 100%;
                     height: 150px;
                 }
-
                 div.small-cards {
                     background-color: #fff;
                     max-height: 130px;
@@ -450,11 +388,9 @@ main#account {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-
                     a {
                         text-decoration: none;
                     }
-
                     &:hover {
                         div.icon {
                             i {
@@ -462,47 +398,34 @@ main#account {
                             }
                         }
                     }
-
                     div.icon {
                         position: relative;
                         height: 45px;
                         width: 60px;
                         margin: 6px auto 12px;
                         text-align: center;
-
                         i {
                             font-size: 3.5rem;
                             color: black;
                         }
                     }
-
                     div.tekst {
                         text-align: center;
                         text-decoration: none;
                         color: black;
-
                         &:hover {
                             text-decoration: none;
                         }
 
                     }
-
-
-
                     &:first-child {
                         margin-right: 10px;
-
                     }
-
                     &:last-child {
                         margin-left: 10px;
                     }
                 }
-
-
-
             }
-
             div.article1 {
                 display: flex;
                 position: relative;
@@ -510,29 +433,21 @@ main#account {
         }
 
     }
-
-
-
-
 }
-
 body#account {
     .navbar {
         padding: 0;
     }
-
     button {
         span {
             color: black;
         }
     }
 }
-
 body#detail{
     background-color: $background;
 }
 main#detail {
-
     div.container-fluid {
         max-width: 1000px;
         padding-top: $margin;
@@ -582,7 +497,6 @@ main#detail {
                 }
             }
         }
-        
         div.top{
             display: flex;
             justify-content: space-around;
@@ -638,7 +552,6 @@ main#detail {
                             display: flex;
                             justify-content: center;
                         }
-
                     }
                     div.year{
                         background-color: $yellow;
@@ -653,7 +566,6 @@ main#detail {
                             display: flex;
                             justify-content: center;
                         }
-
                     }
                 }
                 div.btn{
@@ -665,20 +577,15 @@ main#detail {
                         transform: translatey(3px);
                         box-shadow: none;
                     }
-                
-                    /* buttons hover Animation */
                     button:hover {
                         animation: ani9 0.4s ease-in-out infinite alternate;
                     }
-
                 }
-
             }
         }
     }
 
 }
-
 body#login {
     background-color: $yellow;
 }
@@ -689,7 +596,6 @@ body#register {
 
 main#login {
     margin-top: 200px;
-
     form {
         width: 450px;
         min-height: 500px;
@@ -700,48 +606,34 @@ main#login {
         padding: 2%;
         background-image: linear-gradient(-225deg, $blue 50%, $orange 50%);
     }
-
     form .con {
         display: -webkit-flex;
         display: flex;
-
         -webkit-justify-content: space-around;
         justify-content: space-around;
-
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-
         margin: 0 auto;
-
         div.other {
             display: flex;
             justify-content: center;
-
             button.frgt-pass {
                 margin-right: 5px;
             }
         }
     }
-
     header {
         margin: 2% auto 10% auto;
         text-align: center;
     }
-
     header h2 {
         font-size: 250%;
         font-family: 'Playfair Display', serif;
         color: #3e403f;
     }
-
     header p {
         letter-spacing: 0.05em;
     }
-
-
-
-
-
     .input-item {
         background: #fff;
         color: #333;
@@ -750,137 +642,100 @@ main#login {
         bottom: -1px;
         position: relative;
     }
-
-
     #eye {
         background: #fff;
         color: #333;
-
         margin: 5.9px 0 0 0;
         margin-left: -20px;
-
         float: right;
         position: relative;
         right: 1%;
         top: -.2%;
         z-index: 5;
-
         top: 15px;
         right: 30px;
-
         cursor: pointer;
     }
-
-
-
     input[class="form-input"] {
         width: 250px;
         height: 50px;
-
         margin-top: 2%;
         padding: 15px;
-
         font-size: 16px;
         font-family: 'Abel', sans-serif;
         color: #5E6472;
-
         outline: none;
         border: none;
-
         border-radius: 0px 5px 5px 0px;
         transition: 0.2s linear;
-
     }
-
     input[id="txt-input"] {
         width: 250px;
     }
-
     input:focus {
         transform: translateX(-2px);
         border-radius: 5px;
     }
-
     button {
         display: inline-block;
         color: #252537;
-
         width: 280px;
         height: 50px;
-
         padding: 0 20px;
         background: #fff;
         border-radius: 5px;
-
         outline: none;
         border: none;
-
         cursor: pointer;
         text-align: center;
         transition: all 0.2s linear;
-
         margin: 7% auto;
         letter-spacing: 0.05em;
     }
-
     .submits {
         display: inline-block;
         float: left;
         margin-left: 2%;
         color: $black;
-
-
     }
-
     a.signup {
         display: flex;
         align-items: center;
-
         &:hover {
             text-decoration: none;
             color: #333;
         }
     }
-
     button.sign-up {
         display: flex;
         width: 120px;
         align-content: center;
-
         i {
             position: relative;
             right: -10px;
             top: 5px;
         }
     }
-
     .frgt-pass {
         background: transparent;
     }
-
     .sign-up {
         background: #B8F2E6;
     }
-
-
     button:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
-    
     button:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
-
     div.test:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
-
     div.test:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
-
     @keyframes ani9 {
         0% {
             transform: translateY(3px);
@@ -890,12 +745,9 @@ main#login {
             transform: translateY(5px);
         }
     }
-
 }
-
 main#register {
     margin-top: 200px;
-
     form {
         width: 450px;
         min-height: 500px;
@@ -906,8 +758,6 @@ main#register {
         padding: 2%;
         background-image: linear-gradient(-225deg, $blue 50%, $orange 50%);
     }
-
-    /* form Container */
     form .con {
         display: -webkit-flex;
         display: flex;
@@ -919,45 +769,26 @@ main#register {
         flex-wrap: wrap;
 
         margin: 0 auto;
-
-
-
         div.other {
             padding-right: 1.6rem;
             display: flex;
-
-
-
             button.frgt-pass {
                 margin-right: 5px;
             }
         }
     }
-
-    /* the header form form */
     header {
         margin: 2% auto 10% auto;
         text-align: center;
     }
-
-    /* Login title form form */
     header h2 {
         font-size: 250%;
         font-family: 'Playfair Display', serif;
         color: #3e403f;
     }
-
-    /*  A welcome message or an explanation of the login form */
     header p {
         letter-spacing: 0.05em;
     }
-
-
-
-    /* //////////////////////////////////////////// */
-    /* //////////////////////////////////////////// */
-
-
     .input-item {
         background: #fff;
         color: #333;
@@ -966,131 +797,88 @@ main#register {
         bottom: -1px;
         position: relative;
     }
-
-
-
-    /* Show/hide password Font Icon */
     #eye,
     #eye1 {
         background: #fff;
         color: #333;
-
         margin: 5.9px 0 0 0;
         margin-left: -20px;
-
         float: right;
         position: relative;
         right: 1%;
         top: -.2%;
         z-index: 5;
-
         top: 15px;
         right: 30px;
-
         cursor: pointer;
     }
-
-    /* inputs form  */
     input[class="form-input"] {
         width: 250px;
         height: 50px;
-
         margin-top: 2%;
         padding: 15px;
-
         font-size: 16px;
         font-family: 'Abel', sans-serif;
         color: #5E6472;
-
         outline: none;
         border: none;
-
         border-radius: 0px 5px 5px 0px;
         transition: 0.2s linear;
-
     }
-
     input[id="txt-input"] {
         width: 250px;
     }
-
-    /* focus  */
     input:focus {
         transform: translateX(-2px);
         border-radius: 5px;
     }
-
-    /* //////////////////////////////////////////// */
-    /* //////////////////////////////////////////// */
-
-    /* input[type="text"] {min-width: 250px;} */
-    /* buttons  */
     button {
         display: inline-block;
         color: #252537;
-
         width: 280px;
         height: 50px;
-
         padding: 0 20px;
         background: #fff;
         border-radius: 5px;
-
         outline: none;
         border: none;
-
         cursor: pointer;
         text-align: center;
         transition: all 0.2s linear;
-
         margin: 7% auto;
         letter-spacing: 0.05em;
     }
-
-    /* Submits */
     .submits {
         width: 100%;
         display: inline-block;
         float: left;
         margin-left: 2%;
     }
-
-    /*       Forgot Password button FAF3DD  */
     .frgt-pass {
         background: transparent;
     }
 
-    /*     Sign Up button  */
     .sign-up {
         background: #B8F2E6;
     }
-
-
-    /* buttons hover */
     button:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
-
-    /* buttons hover Animation */
     button:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
-
     @keyframes ani9 {
         0% {
             transform: translateY(3px);
         }
-
         100% {
             transform: translateY(5px);
         }
     }
 
 }
-
 @media only screen and (max-width: 768px) {
-
     main#mox {
         div.container {
             div.row {
@@ -1098,47 +886,55 @@ main#register {
             }
         }
     }
-
-}
+    main#lego{
+        div.color{
+            display: none;
+        }
+    }
+    div.container-fluid {
+        div.row { 
+            justify-content: space-evenly;             
+                .card {
+                   max-width: 300px;
+                }
+            }
+        }
+    }
+               
 
 @media only screen and (max-width: 995px) {
     nav {
         height: 100%;
     }
 }
-
 @media only screen and (max-width: 600px) {
     main#detail {
-
         div.container-fluid {
             flex-direction: column;
         }
     }
-
-
+    main#lego{
+        div.color{
+            display: none;
+        }
+    }
     #minifigure {
         display: none;
     }
-
     div#nav {
         padding: 0;
     }
-
     nav {
         height: auto;
         display: flex;
         justify-content: center;
-
         div.container {
             margin: 0;
             padding: 0;
-
             button {
                 padding: 1rem;
             }
-
         }
-
         ul {
             float: none;
             display: flex;
@@ -1147,29 +943,23 @@ main#register {
             justify-items: center;
             margin: 0;
             padding: 0;
-
-
             li {
                 float: none;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
             }
         }
     }
-
     .active {
         background-color: $orange;
     }
-
     main div#carouselExampleIndicators {
         //margin-top: 20px;
         display: none;
     }
     main#detail {
-
         div.container-fluid {
             max-width: 1000px;
             padding-top: $margin;
@@ -1182,12 +972,24 @@ main#register {
                     }
                 }
                 div.right{
-                    
-                    
-    
                 }
             }
-
+        }
+    }
+    div.sets {
+        div.cards {
+            margin-top: $margin;
+            div.card {
+                display: flex;
+                flex-direction: column!important;
+                justify-content: center;
+                img{
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+            }
         }
     }
 }

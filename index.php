@@ -58,7 +58,7 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authk
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <title>index</title>
 </head>
-<body id="body">
+<body id="index">
 <?php include_once 'include/header.php'; ?>
 <main id="home">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

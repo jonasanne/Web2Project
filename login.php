@@ -29,11 +29,11 @@ if(!empty($_POST) ){
             }
            else if($usernamecontrole != $_POST["username"]){
                //De gebruiker zit NIET in de DB (gechecked op username)
-               $error="No active account was found for this email address.";
+               $_SESSION['message']="No active account was found for this email address.";
            }
            else{
                //Het ingegeven wachtwoord komt niet overeen met het wachtwoord in de DB
-               $error = "The password is incorrect";
+               $_SESSION['message'] = "The password is incorrect";
            }
        }
    }else{
