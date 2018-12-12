@@ -878,6 +878,62 @@ main#register {
     }
 
 }
+main#detail_overwatch{
+    background-color: $background;
+    div.img{
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: $margin;
+        }
+    }
+    div.container-fluid{
+        div.img{
+            display: flex;
+            justify-content: center;
+
+        }
+        
+        div.sets {
+            div.cards {
+                margin-top: $margin;
+                div.card {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: $margin;
+                    img {
+                        width:100% ;
+                        max-width: 300px;
+                        height: auto;
+                        max-height: 250px;
+                        
+                    }
+                    a{
+                        color: black;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    p.card-text{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        
+        div.left{
+            
+            div.main{
+                p{
+                    font-size: 1.2rem;
+                    line-height: 30px;
+                }
+
+            }
+        }
+    }
+}
 @media only screen and (max-width: 768px) {
     main#mox {
         div.container {
@@ -900,8 +956,6 @@ main#register {
             }
         }
     }
-               
-
 @media only screen and (max-width: 995px) {
     nav {
         height: 100%;

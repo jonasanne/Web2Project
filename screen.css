@@ -787,6 +787,47 @@ main#register button:hover {
   }
 }
 
+main#detail_overwatch {
+  background-color: #F8F8F8;
+}
+main#detail_overwatch div.img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+main#detail_overwatch div.container-fluid div.img {
+  display: flex;
+  justify-content: center;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards {
+  margin-top: 20px;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards div.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards div.card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 250px;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards div.card a {
+  color: black;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards div.card a:hover {
+  text-decoration: none;
+}
+main#detail_overwatch div.container-fluid div.sets div.cards div.card p.card-text {
+  font-size: 1.2rem;
+}
+main#detail_overwatch div.container-fluid div.left div.main p {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   main#lego div.color {
     display: none;
