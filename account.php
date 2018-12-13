@@ -1,9 +1,24 @@
-<?php
+<?php include_once 'scripts/config.php';?>
+<?php include_once 'scripts/api.php';?>
+<?php include_once 'scripts/databaseconnect.php';
+
 session_start();
 if(!isset($_SESSION['username'])){
    header("Location:Login.php");
 }
-$sql= "SELECT COUNT(*) as num_sets FROM `user_lijst` where userID=";
+$userid = $_SESSION['userID'];
+$sql= "SELECT COUNT(*) as num_sets FROM `user_lijst` where userID='$userid'";
+$result = $mysqli->query($sql);
+$table = $result->fetch_assoc();
+
+$sql_parts= "SELECT sum(parts) as total_parts FROM `user_lijst` WHERE userID='$userid'";
+$result_parts = $mysqli->query($sql_parts);
+$table_parts = $result_parts->fetch_assoc();
+
+$sql_last= "SELECT * FROM `user_lijst` ORDER BY mijn_lijstID DESC";
+$result_last = $mysqli->query($sql_last);
+$table_last = $result_last->fetch_assoc();
+
 
 ?>
 <!DOCTYPE html>
@@ -39,9 +54,9 @@ $sql= "SELECT COUNT(*) as num_sets FROM `user_lijst` where userID=";
     </div>
     <div class="username"><h2><?php print($_SESSION['username']); ?></h2></div>
     <div class="align">
-    <div class="sets"><span>sets:</span></div>
+    <div class="sets"><span>sets: </span> <?php print($table['num_sets']); ?> </div>
     
-    <div class="sets"><span>parts:</span></div>
+    <div class="sets"><span>parts: </span><?php print($table_parts['total_parts']); ?> </div>
     
     <div class="btn">
     <a href="logout.php">

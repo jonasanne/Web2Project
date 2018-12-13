@@ -948,6 +948,16 @@ main#verlanglijst div.container-fluid div.cards div.card- div.card-body {
     max-width: 250px;
     max-height: 250px;
   }
+
+  main#account div.second-row {
+    display: none;
+  }
+  main#account div.container-fluid section#navigatie {
+    padding-top: 20px;
+  }
+  main#account div.container-fluid section.content {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */

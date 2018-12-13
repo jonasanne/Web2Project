@@ -1079,4 +1079,17 @@ main#verlanglijst{
             }
         }
     }
+    main#account{
+        div.second-row{
+            display: none;
+        }
+         div.container-fluid{
+             section#navigatie{
+                 padding-top: $margin;
+             }
+              section.content{
+                margin-top: $margin;
+         }
+        }
+    }
 }

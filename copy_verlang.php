@@ -10,6 +10,7 @@ $table = $result->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <link rel="stylesheet" href="scripts/css/screen.css">
 <script
@@ -17,6 +18,7 @@ $table = $result->fetch_assoc();
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,6 +33,7 @@ $table = $result->fetch_assoc();
      <h1 style="align">Verlanglijst</h1>
  <div class="cards">
  <?php
+
  foreach($result as $row ){
     $set_num =$row['set_num'];
     $set_name =$row['name'];
@@ -52,11 +55,23 @@ $table = $result->fetch_assoc();
     </div>
   </div>
   </div>
+
     <?php
 }
-?> 
+
+      
+
+?>
+
+ 
  </div>
+ 
+ 
+ 
  </div>
+ 
+ 
+ 
  </main>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
