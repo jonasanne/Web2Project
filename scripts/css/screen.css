@@ -319,8 +319,9 @@ main#account div.container-fluid section.content div.all-small-cards div.row {
 }
 main#account div.container-fluid section.content div.all-small-cards div.small-cards {
   background-color: #fff;
-  max-height: 130px;
-  max-width: 250px;
+  max-height: 150px;
+  max-width: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -826,6 +827,31 @@ main#detail_overwatch div.container-fluid div.sets div.cards div.card p.card-tex
 main#detail_overwatch div.container-fluid div.left div.main p {
   font-size: 1.2rem;
   line-height: 30px;
+}
+
+main#verlanglijst div.container-fluid h1 {
+  text-align: center;
+}
+main#verlanglijst div.container-fluid div.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main#verlanglijst div.container-fluid div.cards div.card- {
+  margin-bottom: 20px;
+  max-width: 250px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+main#verlanglijst div.container-fluid div.cards div.card- div.top img {
+  max-height: 250px;
+  max-width: 250px;
+}
+main#verlanglijst div.container-fluid div.cards div.card- div.card-body {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {

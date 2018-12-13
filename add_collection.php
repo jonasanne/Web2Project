@@ -31,7 +31,6 @@ $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
       if($result -> num_rows > 0){
           $id = $result->fetch_assoc();
           $userID = $id['id'];
-          $_SESSION['userID'] = $userID ;
           
           
       }
@@ -41,7 +40,7 @@ $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
         $_SESSION['message']= "u are not logged in yet!";
     }else{
         
-        $sql = "INSERT INTO  verlanglijst (userID,set_num,name,year,num_parts,img_url)"."VALUES('$userID','$set_num','$name','$year','$num_parts','$img_url')";
+        $sql = "INSERT INTO  user_lijst (userID,name,set_num,year,parts,img_url)"."VALUES('$userID','$name','$set_num','$year','$num_parts','$img_url')";
           if($mysqli->query($sql) == true){
             header('location:index.php');
         

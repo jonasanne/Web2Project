@@ -383,8 +383,9 @@ main#account {
                 }
                 div.small-cards {
                     background-color: #fff;
-                    max-height: 130px;
-                    max-width: 250px;
+                    max-height: 150px;
+                    max-width: 300px;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -930,6 +931,38 @@ main#detail_overwatch{
                     line-height: 30px;
                 }
 
+            }
+        }
+    }
+}
+main#verlanglijst{
+    div.container-fluid{
+        h1{
+            text-align: center;
+        }
+        div.cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            div.card-{
+                margin-bottom: $margin;
+                max-width: 250px;
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 15px;
+
+                div.top{
+                    img{
+                        max-height: 250px;
+                        max-width: 250px;
+                    }
+                }
+                div.card-body{
+                    display: flex;
+                    align-content: flex-end;
+                    flex-direction: column;
+                }
             }
         }
     }

@@ -6,7 +6,7 @@
         {
             "label": "screen.css",
             "type": "shell",
-            "command": "sass --watch screen.scss screen.css",
+            "command": "sass --watch scripts/css/screen.scss scripts/css/screen.css",
             "group": {
                 "kind": "build",
                 "isDefault": true
