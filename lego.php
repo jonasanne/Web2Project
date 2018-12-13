@@ -53,17 +53,17 @@
     <div class="sets">
         <div class="cards container-fluid">
     <div class="card">
-  <img src="image/starwars.jpg" alt="">
+  <img src="image/legocity.jpg" alt="">
   <div class="card-body col-lg-9">
-      <a href=""><h2>New 2019 lego star wars sets</h2></a>
+      <a href="lego_city.php"><h2>New 2019 lego City sets</h2></a>
       <hr>
-    <p class="card-text">A minifig of Luke Skywalker (1999) will be featured in one of the 20th Anniversary sets! LEGO Star Wars celebrates its 20th Anniversary. We might get sets for the movie Star Wars Episode 9, scheduled for December 19, 2019. Set number for 37 sets are known. (See all Star Wars sets.)</p>
+    <p class="card-text">It looks like our friends in Canada will have a head start with these new 2019 LEGO City sets. Thanks to an eagle-eyed LEGO fan, these new LEGO City sets have been reportedly found on physical store shelves of Canadian toy store Mastermind Toys.</p>
   </div>
 </div>
 <div class="card ">
     
   <div class="card-body col-lg-9">
-      <a href=""><h2>New 2019 lego overwatch sets</h2></a>
+      <a href="lego_overwatch.php"><h2>New 2019 lego overwatch sets</h2></a>
       <hr>
     <p class="card-text">One Overwatch sets has already been released (75987), with six to follow early January. All together, the six sets add figures of Overwatch characters Tracer, Widowmaker, Hanzo, Genji, Soldier: 76, McCree, D.Va, Reinhardt, Pharah, Mercy, Reaper, and Winston. (See all Overwatch sets.)</p>
 

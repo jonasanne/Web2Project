@@ -63,6 +63,7 @@ if(!empty($_POST) ){
     
         <title>detail</title>
 </head>
+
 <body id="login">
 <main id="login">
 <div class="overlay">
