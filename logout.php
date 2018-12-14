@@ -6,6 +6,5 @@ ob_start();
 header("location:index.php");
 ob_end_flush(); 
 include 'index.php';
-//include 'home.php';
 exit();
 ?>

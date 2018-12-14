@@ -28,7 +28,7 @@ $table = $result->fetch_assoc();
 <?php include_once 'include/header.php'; ?>
  <main id="verlanglijst">
  <div class="container-fluid">
-     <h1 style="align">Verlanglijst</h1>
+     <h1 style="align">My Wishlist</h1>
  <div class="cards">
  <?php
  foreach($result as $row ){

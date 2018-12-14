@@ -1,12 +1,14 @@
 <?php include_once 'scripts/config.php';?>
 <?php include_once 'scripts/api.php';?>
 <?php include_once 'scripts/databaseconnect.php';
-
 session_start();
+
 if(!isset($_SESSION['username'])){
    header("Location:Login.php");
 }
-$userid = $_SESSION['userID'];
+
+
+$userid =$_SESSION['userID'];
 $sql= "SELECT COUNT(*) as num_sets FROM `user_lijst` where userID='$userid'";
 $result = $mysqli->query($sql);
 $table = $result->fetch_assoc();
@@ -15,7 +17,7 @@ $sql_parts= "SELECT sum(parts) as total_parts FROM `user_lijst` WHERE userID='$u
 $result_parts = $mysqli->query($sql_parts);
 $table_parts = $result_parts->fetch_assoc();
 
-$sql_last= "SELECT * FROM `user_lijst` ORDER BY mijn_lijstID DESC";
+$sql_last= "SELECT * FROM `user_lijst` WHERE userID='$userid' ORDER BY mijn_lijstID DESC";
 $result_last = $mysqli->query($sql_last);
 $table_last = $result_last->fetch_assoc();
 
@@ -78,7 +80,6 @@ $table_last = $result_last->fetch_assoc();
 
      <!-- tekst -->
      <div class="tekst">My collection <i class="fas fa-angle-right"></i> </div>
-       <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
        </a>
       </div>
     <div class=" small-cards">
@@ -88,7 +89,6 @@ $table_last = $result_last->fetch_assoc();
 
      <!-- tekst -->
      <div class="tekst">wishlist <i class="fas fa-angle-right"></i> </div>
-       <!-- <span class="tekst">Verlanglijst <i class="fas fa-angle-right"></i></span> -->
        </a>
       </div>
     
@@ -97,40 +97,36 @@ $table_last = $result_last->fetch_assoc();
   <div class="second-row">
     <h3>Last bought</h3>  
   <table class="table table-condensed">
-    <thead>
+  <thead>
       <tr>
         <th>name</th>
         <th>Set_num</th>
         <th>parts</th>
-        <th>buy date</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
-  </table>
+    <?php
+  foreach($result_last as $row ){
+    $set_num =$row['set_num'];
+    $set_name =$row['name'];
+    $set_year =$row['year'];
+    $set_parts =$row['parts'];
+    $set_img =$row['img_url'];
+    ?>
+<!-- html -->
 
+      <tr>
+        <td> <?php print($set_name);?> </td>
+        <td><?php print($set_num) ?></td>
+        <td><?php print($set_parts); ?></td>
+      </tr>
+   
+  <?php
+}
+?> 
+ </tbody>
+  </table>
   </div>
-      
-    
-  
   </section>
   </div>
   </main>

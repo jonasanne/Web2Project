@@ -1,7 +1,8 @@
 <?php 
  include_once 'scripts/databaseconnect.php';
- //$checkusername = $_SESSION['username'];
-//controleren of username al bestaat
+if(!isset($_SESSION['message'])){
+   $_SESSION['message'] = "";
+}
 if(!empty($_POST) ){
 
    //Als de pagina gepost is & de email & pwd zijn geset
@@ -21,8 +22,10 @@ if(!empty($_POST) ){
            $usernamecontrole = $user['username'];
            if($sugar == md5($_POST["password"])){
                //Het ingegeven wachtwoord komt overeen met het geïncripteerde wachtwoord in de DB
-               //Check of het vinkje "ingelogd blijven" is aangevinkt
                $_SESSION["username"] = $username;
+                $_SESSION['userID'] = $user['id'];
+                $userid = $_SESSION['userID'];
+               
                // print_r($_SESSION["email"]);
                header("location:account.php");
                exit;
@@ -67,6 +70,8 @@ if(!empty($_POST) ){
 <body id="login">
 <main id="login">
 <div class="overlay">
+<div class="error"><div class="error-message"> <h1> <?php print($_SESSION['message']); ?> </h1></div></div>
+
 <form method="post" action="<?php  print ($_SERVER['PHP_SELF']);  ?>">
    <div class="con">
    <header class="head-form">

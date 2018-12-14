@@ -48,9 +48,6 @@ $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
         }
     }
 
-    //   if($row = $result->fetch_assoc()){
-          
-    // }
 
 
       

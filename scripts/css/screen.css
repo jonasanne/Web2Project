@@ -42,7 +42,7 @@ nav ul li {
   font-size: 1.7rem;
   padding: 0.9rem;
   color: black;
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   transition: 0.2s;
 }
@@ -69,7 +69,7 @@ body#index {
 }
 
 main#home {
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   background-color: #F8F8F8;
   height: 100%;
 }
@@ -84,8 +84,9 @@ main#home div#moc div.row > div {
 }
 main#home div#moc div.row a img {
   margin-top: 20px;
-  width: 100%;
-  height: auto;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
 }
@@ -147,7 +148,7 @@ main#moc .new-moc h2 {
   justify-content: center;
   margin: 0;
   margin-top: 20px;
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 main#moc div.container-fluid div.row {
@@ -201,7 +202,7 @@ main#lego div.color div.container-fluid div.tekst h1 {
   margin-top: 20px;
   font-size: 2rem;
   color: white;
-  font-family: proxima-nova, sans-serif;
+  font-family: proxima-nova sans-serif;
   font-weight: 600;
 }
 main#lego div.color div.container-fluid div.img {
@@ -251,7 +252,7 @@ main#lego div.sets div.cards div.card p.card-text {
 
 main#account {
   background-color: #F8F8F8;
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   min-height: 1080px;
 }
 main#account div.container-fluid section#navigatie {
@@ -511,6 +512,10 @@ body#register {
 main#login {
   margin-top: 200px;
 }
+main#login div.overlay div.error {
+  display: flex;
+  justify-content: center;
+}
 main#login form {
   width: 450px;
   min-height: 500px;
@@ -662,6 +667,10 @@ main#login div.test:hover {
 
 main#register {
   margin-top: 200px;
+}
+main#register div.overlay div.error {
+  display: flex;
+  justify-content: center;
 }
 main#register form {
   width: 450px;

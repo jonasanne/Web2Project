@@ -9,12 +9,10 @@ $data_moc1=json_decode(file_get_contents($url_moc . "20097" . $authkey), true);
 $data_moc2=json_decode(file_get_contents($url_moc . "20098" . $authkey), true);
 $data_moc3=json_decode(file_get_contents($url_moc . "20044" . $authkey), true);
 $data_moc4=json_decode(file_get_contents($url_moc . "20047" . $authkey), true);
-
 $data_moc5=json_decode(file_get_contents($url_moc . "16915" . $authkey), true);
 $data_moc6=json_decode(file_get_contents($url_moc . "19433" . $authkey), true);
 $data_moc7=json_decode(file_get_contents($url_moc . "18916" . $authkey), true);
 $data_moc8=json_decode(file_get_contents($url_moc . "15881" . $authkey), true);
-
 $data_moc9=json_decode(file_get_contents($url_moc . "19485" . $authkey), true);
 $data_moc10=json_decode(file_get_contents($url_moc . "18829" . $authkey), true);
 $data_moc11=json_decode(file_get_contents($url_moc . "16980" . $authkey), true);

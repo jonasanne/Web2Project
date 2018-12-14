@@ -5,8 +5,8 @@ $width : 350px;
 $img-width:180px;
 $img-height:140px;
 $margin-thumbnail:10px;
-$font:'Lora',
-serif;
+$font:'Roboto',
+sans-serif;
 
 
 $blue: #3891A6;
@@ -16,9 +16,9 @@ $red: #DB5461;
 $orange: #E3655B;
 $background:#F8F8F8;
 $border : #f4f3f3;
-$font-prox:proxima-nova,
+$font-prox:proxima-nova sans-serif;
+$font-roboto:'Roboto',
 sans-serif;
-
 
 
 body {
@@ -82,20 +82,25 @@ nav {
 
             font-weight: bold;
             transition: 0.2s;
+
             i {
                 margin-right: 10px;
             }
+
             & img {
                 top: 20px;
                 height: auto;
                 max-width: 100px;
             }
+
             a {
                 color: black;
+
                 &:hover {
                     color: $black;
                 }
             }
+
             a:hover {
                 text-decoration: none;
             }
@@ -103,43 +108,52 @@ nav {
     }
 }
 
-body#index{
+body#index {
     background-color: $background;
 }
+
 main#home {
-    font-family: $font;
+    font-family: $font-roboto;
     background-color: $background;
     height: 100%;
+
     div#moc {
         h2 {
             text-align: center;
             margin-top: $margin;
         }
+
         div.row>div {
             width: auto;
             height: auto;
             margin: auto;
         }
+
         div.row a img {
             margin-top: $margin;
-            width: 100%;
-            height: auto;
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
             box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
             border-radius: 15px;
+
             &:hover {
                 box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 40px 0 rgba(0, 0, 0, 0.19);
             }
         }
+
         button {
             margin-top: $margin;
             font-size: 1.3rem;
             margin-bottom: 20px;
+
             a {
                 text-decoration: none;
                 color: black;
             }
         }
     }
+
     div.container article {
         margin-top: $margin;
         max-width: $width;
@@ -147,21 +161,25 @@ main#home {
         padding: 1rem;
         margin-bottom: $margin;
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+
         &:first-child {
             margin-left: auto;
             margin-right: auto;
         }
+
         &:last-child {
             margin-left: auto;
             margin-right: auto;
         }
     }
 }
+
 div.link {
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-content: center;
+
     a {
         background-color: $yellow;
         padding: 0.8rem;
@@ -170,17 +188,20 @@ div.link {
         font-size: 1.2rem;
         color: black;
         font-weight: bold;
+
         &:hover {
             background-color: #ffe444;
         }
     }
 }
+
 main#moc {
     span#img_lego {
         display: flex;
         justify-content: center;
         background-color: $blue;
     }
+
     .new-moc {
         h2 {
             display: flex;
@@ -191,51 +212,58 @@ main#moc {
             font-weight: bold;
         }
     }
+
     div.container-fluid {
-        div.row {  
+        div.row {
             margin: 0;
-            
-                .card {
-                    box-sizing: border-box;
-                    margin-bottom: $margin;
-                    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
-                    border-radius: 15px;
-                    
-                    div.card-body{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-                        div.card-text{
-                            div span{
-                                font-weight: 500;
-                            }
-                        }
-                    }
-                    a {
-                        img {
-                            width: 100%;
-                            height: auto;
-                            margin-top: $margin-thumbnail;
+
+            .card {
+                box-sizing: border-box;
+                margin-bottom: $margin;
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 15px;
+
+                div.card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    div.card-text {
+                        div span {
+                            font-weight: 500;
                         }
                     }
                 }
-            
+
+                a {
+                    img {
+                        width: 100%;
+                        height: auto;
+                        margin-top: $margin-thumbnail;
+                    }
+                }
+            }
+
         }
     }
+
     hr {
         margin-top: 0;
         background: $red;
     }
 }
+
 main#lego {
     background-color: $background;
     min-height: 1080px;
+
     div.color {
         margin-top: $margin;
         background-color: #56317e;
         background-image: url('image/bgi.png');
         background-position: center;
         background-size: cover;
+
         div.container-fluid {
             max-width: 1200px;
             display: flex;
@@ -286,101 +314,124 @@ main#lego {
 
         }
     }
+
     div.sets {
         div.cards {
             margin-top: $margin;
+
             div.card {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
                 &:first-child {
                     margin-bottom: $margin;
                 }
+
                 div.img {
                     width: 250px;
                     height: 250px;
                 }
-                a{
+
+                a {
                     color: black;
-                    &:hover{
+
+                    &:hover {
                         text-decoration: none;
                     }
                 }
-                p.card-text{
+
+                p.card-text {
                     font-size: 1.2rem;
                 }
             }
         }
     }
 }
+
 main#account {
     background-color: $background;
     font-family: $font;
     min-height: 1080px;
+
     div.container-fluid {
         section#navigatie {
             padding-top: 100px;
             display: flex;
+
             article#content {
                 background-color: #fff;
                 margin-left: $margin;
                 margin-bottom: $margin;
             }
+
             div.profile {
                 background-color: #fff;
                 padding: 1.2rem;
                 width: 100%;
+
                 hr {
                     background: $blue;
                     margin-top: 5px;
                     margin-bottom: 5px;
                 }
+
                 div.img {
                     display: flex;
                     justify-content: center;
                     margin-top: $margin;
                 }
+
                 div.username {
                     display: flex;
                     justify-content: center;
                     margin-top: $margin-thumbnail;
                 }
+
                 div.sets {
                     span {
                         font-size: 1.2rem;
                     }
                 }
-                div.btn{
+
+                div.btn {
                     width: 100%;
                     margin-top: $margin;
-                    &:hover{
+
+                    &:hover {
                         animation: ani9 0.4s ease-in-out infinite alternate;
                     }
                 }
             }
         }
+
         section.content {
             margin-top: 100px;
             display: flex;
             flex-direction: column;
+
             div.second-row {
                 background-color: #fff;
                 margin-top: $margin;
                 padding: 1rem;
                 margin-bottom: $margin;
+
                 h3 {
                     text-align: center;
                 }
             }
+
             div.all-small-cards {
                 display: flex;
                 width: 100%;
                 height: 110px;
                 justify-content: space-between;
+
                 div.row {
                     width: 100%;
                     height: 150px;
                 }
+
                 div.small-cards {
                     background-color: #fff;
                     max-height: 150px;
@@ -389,9 +440,11 @@ main#account {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
+
                     a {
                         text-decoration: none;
                     }
+
                     &:hover {
                         div.icon {
                             i {
@@ -399,34 +452,41 @@ main#account {
                             }
                         }
                     }
+
                     div.icon {
                         position: relative;
                         height: 45px;
                         width: 60px;
                         margin: 6px auto 12px;
                         text-align: center;
+
                         i {
                             font-size: 3.5rem;
                             color: black;
                         }
                     }
+
                     div.tekst {
                         text-align: center;
                         text-decoration: none;
                         color: black;
+
                         &:hover {
                             text-decoration: none;
                         }
 
                     }
+
                     &:first-child {
                         margin-right: 10px;
                     }
+
                     &:last-child {
                         margin-left: 10px;
                     }
                 }
             }
+
             div.article1 {
                 display: flex;
                 position: relative;
@@ -435,27 +495,32 @@ main#account {
 
     }
 }
+
 body#account {
     .navbar {
         padding: 0;
     }
+
     button {
         span {
             color: black;
         }
     }
 }
-body#detail{
+
+body#detail {
     background-color: $background;
 }
+
 main#detail {
     div.container-fluid {
         max-width: 1000px;
         padding-top: $margin;
         background-color: #fff;
-        padding-left:0 ; 
-        padding-right:0 ; 
-        div.section{
+        padding-left: 0;
+        padding-right: 0;
+
+        div.section {
             width: 100%;
             height: 50px;
             background-color: $background;
@@ -466,31 +531,38 @@ main#detail {
             font-size: 1.6rem;
             font-weight: 500;
         }
-        div.cards{
+
+        div.cards {
             margin-top: $margin;
         }
-        div.cards{
+
+        div.cards {
             background-color: #fff;
             width: 100%;
             display: flex;
             padding: 0.5rem;
-            div.row{
+
+            div.row {
                 margin: 0;
-                div.card-deck{
-                    div.card{
+
+                div.card-deck {
+                    div.card {
                         padding: 0;
-                        a{
-                            img{
+
+                        a {
+                            img {
                                 padding: 0.5rem;
                             }
                         }
-                        div.card-body{
-                            div{
-                                div{
+
+                        div.card-body {
+                            div {
+                                div {
                                     font-size: 1.1rem;
-                                   span{
-                                       font-weight: 500;
-                                   } 
+
+                                    span {
+                                        font-weight: 500;
+                                    }
                                 }
                             }
                         }
@@ -498,86 +570,101 @@ main#detail {
                 }
             }
         }
-        div.top{
+
+        div.top {
             display: flex;
             justify-content: space-around;
-            div.left{
-                img{
+
+            div.left {
+                img {
                     max-width: 400px;
                     height: auto;
                     border: solid 3px $border;
                     border-radius: 20px;
                 }
             }
-            div.right{
+
+            div.right {
                 max-width: 430px;
                 width: 100%;
-                div.title{
+
+                div.title {
                     display: flex;
                     justify-content: center;
                     width: 100%;
-                    h2{
+
+                    h2 {
                         border-bottom: solid 3px $border;
                         width: 100%;
                         text-align: center;
                     }
                 }
-                div.information{
+
+                div.information {
                     display: flex;
                     justify-content: space-around;
                     margin-top: $margin;
-                    div.number{
+
+                    div.number {
                         background-color: $yellow;
                         border-radius: .25rem;
-                        padding:0.5rem;
+                        padding: 0.5rem;
                         min-width: 100px;
                         display: flex;
                         justify-content: center;
                         font-size: 1.1rem;
                         flex-direction: column;
-                        div.align{
-                            display: flex;
-                            justify-content: center;
-                        }
-                    }                     
-                    div.parts{
-                        background-color: $yellow;
-                        border-radius: .25rem;
-                        padding:0.5rem;                  
-                        display: flex;
-                        justify-content: center;
-                        font-size: 1.1rem;
-                        flex-direction: column;
-                        min-width: 100px;
-                        div.align{
+
+                        div.align {
                             display: flex;
                             justify-content: center;
                         }
                     }
-                    div.year{
+
+                    div.parts {
                         background-color: $yellow;
-                        width: 100px;
                         border-radius: .25rem;
-                        padding:0.5rem;                    
+                        padding: 0.5rem;
                         display: flex;
                         justify-content: center;
                         font-size: 1.1rem;
                         flex-direction: column;
-                        div.align{
+                        min-width: 100px;
+
+                        div.align {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    div.year {
+                        background-color: $yellow;
+                        width: 100px;
+                        border-radius: .25rem;
+                        padding: 0.5rem;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 1.1rem;
+                        flex-direction: column;
+
+                        div.align {
                             display: flex;
                             justify-content: center;
                         }
                     }
                 }
-                div.btn{
+
+                div.btn {
                     margin-top: $margin;
                     width: 100%;
                     display: flex;
                     justify-content: center;
+
                     button:hover {
                         transform: translatey(3px);
                         box-shadow: none;
                     }
+
                     button:hover {
                         animation: ani9 0.4s ease-in-out infinite alternate;
                     }
@@ -587,6 +674,7 @@ main#detail {
     }
 
 }
+
 body#login {
     background-color: $yellow;
 }
@@ -597,6 +685,16 @@ body#register {
 
 main#login {
     margin-top: 200px;
+
+    div.overlay {
+        div.error {
+            display: flex;
+            justify-content: center;
+
+            div.error-message {}
+        }
+    }
+
     form {
         width: 450px;
         min-height: 500px;
@@ -607,6 +705,7 @@ main#login {
         padding: 2%;
         background-image: linear-gradient(-225deg, $blue 50%, $orange 50%);
     }
+
     form .con {
         display: -webkit-flex;
         display: flex;
@@ -615,26 +714,32 @@ main#login {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         margin: 0 auto;
+
         div.other {
             display: flex;
             justify-content: center;
+
             button.frgt-pass {
                 margin-right: 5px;
             }
         }
     }
+
     header {
         margin: 2% auto 10% auto;
         text-align: center;
     }
+
     header h2 {
         font-size: 250%;
         font-family: 'Playfair Display', serif;
         color: #3e403f;
     }
+
     header p {
         letter-spacing: 0.05em;
     }
+
     .input-item {
         background: #fff;
         color: #333;
@@ -643,6 +748,7 @@ main#login {
         bottom: -1px;
         position: relative;
     }
+
     #eye {
         background: #fff;
         color: #333;
@@ -657,6 +763,7 @@ main#login {
         right: 30px;
         cursor: pointer;
     }
+
     input[class="form-input"] {
         width: 250px;
         height: 50px;
@@ -670,13 +777,16 @@ main#login {
         border-radius: 0px 5px 5px 0px;
         transition: 0.2s linear;
     }
+
     input[id="txt-input"] {
         width: 250px;
     }
+
     input:focus {
         transform: translateX(-2px);
         border-radius: 5px;
     }
+
     button {
         display: inline-block;
         color: #252537;
@@ -693,50 +803,62 @@ main#login {
         margin: 7% auto;
         letter-spacing: 0.05em;
     }
+
     .submits {
         display: inline-block;
         float: left;
         margin-left: 2%;
         color: $black;
     }
+
     a.signup {
         display: flex;
         align-items: center;
+
         &:hover {
             text-decoration: none;
             color: #333;
         }
     }
+
     button.sign-up {
         display: flex;
         width: 120px;
         align-content: center;
+
         i {
             position: relative;
             right: -10px;
             top: 5px;
         }
     }
+
     .frgt-pass {
         background: transparent;
     }
+
     .sign-up {
         background: #B8F2E6;
     }
+
     button:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
+
     button:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
+
     div.test:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
+
     div.test:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
+
     @keyframes ani9 {
         0% {
             transform: translateY(3px);
@@ -747,8 +869,18 @@ main#login {
         }
     }
 }
+
 main#register {
     margin-top: 200px;
+
+    div.overlay {
+        div.error {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
     form {
         width: 450px;
         min-height: 500px;
@@ -759,6 +891,7 @@ main#register {
         padding: 2%;
         background-image: linear-gradient(-225deg, $blue 50%, $orange 50%);
     }
+
     form .con {
         display: -webkit-flex;
         display: flex;
@@ -770,26 +903,32 @@ main#register {
         flex-wrap: wrap;
 
         margin: 0 auto;
+
         div.other {
             padding-right: 1.6rem;
             display: flex;
+
             button.frgt-pass {
                 margin-right: 5px;
             }
         }
     }
+
     header {
         margin: 2% auto 10% auto;
         text-align: center;
     }
+
     header h2 {
         font-size: 250%;
         font-family: 'Playfair Display', serif;
         color: #3e403f;
     }
+
     header p {
         letter-spacing: 0.05em;
     }
+
     .input-item {
         background: #fff;
         color: #333;
@@ -798,6 +937,7 @@ main#register {
         bottom: -1px;
         position: relative;
     }
+
     #eye,
     #eye1 {
         background: #fff;
@@ -813,6 +953,7 @@ main#register {
         right: 30px;
         cursor: pointer;
     }
+
     input[class="form-input"] {
         width: 250px;
         height: 50px;
@@ -826,13 +967,16 @@ main#register {
         border-radius: 0px 5px 5px 0px;
         transition: 0.2s linear;
     }
+
     input[id="txt-input"] {
         width: 250px;
     }
+
     input:focus {
         transform: translateX(-2px);
         border-radius: 5px;
     }
+
     button {
         display: inline-block;
         color: #252537;
@@ -849,12 +993,14 @@ main#register {
         margin: 7% auto;
         letter-spacing: 0.05em;
     }
+
     .submits {
         width: 100%;
         display: inline-block;
         float: left;
         margin-left: 2%;
     }
+
     .frgt-pass {
         background: transparent;
     }
@@ -862,71 +1008,83 @@ main#register {
     .sign-up {
         background: #B8F2E6;
     }
+
     button:hover {
         transform: translatey(3px);
         box-shadow: none;
     }
+
     button:hover {
         animation: ani9 0.4s ease-in-out infinite alternate;
     }
+
     @keyframes ani9 {
         0% {
             transform: translateY(3px);
         }
+
         100% {
             transform: translateY(5px);
         }
     }
 
 }
-main#detail_overwatch{
+
+main#detail_overwatch {
     background-color: $background;
-    div.img{
-        img{
+
+    div.img {
+        img {
             width: 100%;
             height: auto;
             margin-bottom: $margin;
         }
     }
-    div.container-fluid{
-        div.img{
+
+    div.container-fluid {
+        div.img {
             display: flex;
             justify-content: center;
 
         }
-        
+
         div.sets {
             div.cards {
                 margin-top: $margin;
+
                 div.card {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     margin-bottom: $margin;
+
                     img {
-                        width:100% ;
+                        width: 100%;
                         max-width: 300px;
                         height: auto;
                         max-height: 250px;
-                        
+
                     }
-                    a{
+
+                    a {
                         color: black;
-                        &:hover{
+
+                        &:hover {
                             text-decoration: none;
                         }
                     }
-                    p.card-text{
+
+                    p.card-text {
                         font-size: 1.2rem;
                     }
                 }
             }
         }
-        
-        div.left{
-            
-            div.main{
-                p{
+
+        div.left {
+
+            div.main {
+                p {
                     font-size: 1.2rem;
                     line-height: 30px;
                 }
@@ -935,30 +1093,33 @@ main#detail_overwatch{
         }
     }
 }
-main#verlanglijst{
-    div.container-fluid{
-        h1{
+
+main#verlanglijst {
+    div.container-fluid {
+        h1 {
             text-align: center;
         }
-        div.cards{
+
+        div.cards {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
 
-            div.card-{
+            div.card- {
                 margin-bottom: $margin;
                 max-width: 250px;
                 box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 15px;
 
-                div.top{
-                    img{
+                div.top {
+                    img {
                         max-height: 250px;
                         max-width: 250px;
                     }
                 }
-                div.card-body{
+
+                div.card-body {
                     display: flex;
                     align-content: flex-end;
                     flex-direction: column;
@@ -967,6 +1128,7 @@ main#verlanglijst{
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
     main#mox {
         div.container {
@@ -975,53 +1137,65 @@ main#verlanglijst{
             }
         }
     }
-    main#lego{
-        div.color{
+
+    main#lego {
+        div.color {
             display: none;
         }
     }
+
     div.container-fluid {
-        div.row { 
-            justify-content: space-evenly;             
-                .card {
-                   max-width: 300px;
-                }
+        div.row {
+            justify-content: space-evenly;
+
+            .card {
+                max-width: 300px;
             }
         }
     }
+}
+
 @media only screen and (max-width: 995px) {
     nav {
         height: 100%;
     }
 }
+
 @media only screen and (max-width: 600px) {
     main#detail {
         div.container-fluid {
             flex-direction: column;
         }
     }
-    main#lego{
-        div.color{
+
+    main#lego {
+        div.color {
             display: none;
         }
     }
+
     #minifigure {
         display: none;
     }
+
     div#nav {
         padding: 0;
     }
+
     nav {
         height: auto;
         display: flex;
         justify-content: center;
+
         div.container {
             margin: 0;
             padding: 0;
+
             button {
                 padding: 1rem;
             }
         }
+
         ul {
             float: none;
             display: flex;
@@ -1030,6 +1204,7 @@ main#verlanglijst{
             justify-items: center;
             margin: 0;
             padding: 0;
+
             li {
                 float: none;
                 width: 100%;
@@ -1039,38 +1214,45 @@ main#verlanglijst{
             }
         }
     }
+
     .active {
         background-color: $orange;
     }
+
     main div#carouselExampleIndicators {
         //margin-top: 20px;
         display: none;
     }
+
     main#detail {
         div.container-fluid {
             max-width: 1000px;
             padding-top: $margin;
             background-color: #fff;
-            div.top{
+
+            div.top {
                 display: flex;
                 flex-direction: column;
-                div.left{
-                    img{
-                    }
+
+                div.left {
+                    img {}
                 }
-                div.right{
-                }
+
+                div.right {}
             }
         }
     }
+
     div.sets {
         div.cards {
             margin-top: $margin;
+
             div.card {
                 display: flex;
-                flex-direction: column!important;
+                flex-direction: column !important;
                 justify-content: center;
-                img{
+
+                img {
                     margin-left: auto;
                     margin-right: auto;
                     max-width: 250px;
@@ -1079,17 +1261,20 @@ main#verlanglijst{
             }
         }
     }
-    main#account{
-        div.second-row{
+
+    main#account {
+        div.second-row {
             display: none;
         }
-         div.container-fluid{
-             section#navigatie{
-                 padding-top: $margin;
-             }
-              section.content{
+
+        div.container-fluid {
+            section#navigatie {
+                padding-top: $margin;
+            }
+
+            section.content {
                 margin-top: $margin;
-         }
+            }
         }
     }
 }

@@ -4,40 +4,11 @@
 //mocs
 $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
 $moclink="https://rebrickable.com/api/v3/lego/mocs/MOC-";
-//"https://rebrickable.com/api/v3/lego/mocs/?key=3058fe9f830ab53859bf5e7668abe35d";
+$setlink="https://rebrickable.com/api/v3/lego/sets/";
 
-//zo vraag je data op lol
-//$random=rand(999,25000);
-//dit zijn de mocs
 $url_moc = $url_sets = "https://rebrickable.com/api/v3/lego/mocs/MOC-";
-$data_moc1=json_decode(file_get_contents($url_moc . "15849" . $authkey), true);
-$data_moc2=json_decode(file_get_contents($url_moc . "15881" . $authkey), true);
-$data_moc3=json_decode(file_get_contents($url_moc . "19683" . $authkey), true);
-$data_moc4=json_decode(file_get_contents($url_moc . "14898" . $authkey), true);
-$data_moc5=json_decode(file_get_contents($url_moc . "15292" . $authkey), true);
-$data_moc6=json_decode(file_get_contents($url_moc . "19950" . $authkey), true);
-$data_moc7=json_decode(file_get_contents($url_moc . "16003" . $authkey), true);
-$data_moc8=json_decode(file_get_contents($url_moc . "13999" . $authkey), true);
-$data_moc9=json_decode(file_get_contents($url_moc . "17649" . $authkey), true);
-$data_moc10=json_decode(file_get_contents($url_moc . "14637" . $authkey), true);
-$data_moc11=json_decode(file_get_contents($url_moc . "13424" . $authkey), true);
-$data_moc12=json_decode(file_get_contents($url_moc . "16083" . $authkey), true);
-//dit zijn de legosets
-
+//dit zijn de sets
 $url_sets = "https://rebrickable.com/api/v3/lego/sets/";
-$data_set1 = json_decode(file_get_contents( $url_sets . "75212" . "-1" . $authkey), true);
-$data_set2 = json_decode(file_get_contents( $url_sets . "75190" . "-1" . $authkey), true);
-$data_set3 = json_decode(file_get_contents( $url_sets . "21125" . "-1" . $authkey), true);
-$data_set4 = json_decode(file_get_contents( $url_sets . "60154" . "-1" . $authkey), true);
-$data_set5 = json_decode(file_get_contents( $url_sets . "71043" . "-1" . $authkey), true);
-$data_set6 = json_decode(file_get_contents( $url_sets . "75953" . "-1" . $authkey), true);
-$data_set7 = json_decode(file_get_contents( $url_sets . "75218" . "-1" . $authkey), true);
-$data_set8 = json_decode(file_get_contents( $url_sets . "75187" . "-1" . $authkey), true);
-$data_set9 = json_decode(file_get_contents( $url_sets . "60197" . "-1" . $authkey), true);
-$data_set10 = json_decode(file_get_contents( $url_sets . "41332" . "-1" . $authkey), true);
-$data_set11 = json_decode(file_get_contents( $url_sets . "41314" . "-1" . $authkey), true);
-$data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authkey), true);
-
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +26,7 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authk
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <title>index</title>
 </head>
 <body id="index">
@@ -89,91 +60,66 @@ $data_set12 = json_decode(file_get_contents( $url_sets . "75181" . "-1" . $authk
 </div>
 
 <div class="container" id="moc">
-  <h2>Moc's</h2>
+  <h2 style="margin-bottom: 0;">Mocs</h2>
   <div class="row">
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc1['set_num']) ?>"><img src="<?php  print($data_moc1['moc_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc2['set_num']) ?>"><img src="<?php  print($data_moc2['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc3['set_num']) ?>"><img src="<?php  print($data_moc3['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc4['set_num']) ?>"><img src="<?php  print($data_moc4['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc5['set_num']) ?>"><img src="<?php  print($data_moc5['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc6['set_num']) ?>"><img src="<?php  print($data_moc6['moc_img_url']);?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc7['set_num']) ?>"><img src="<?php  print($data_moc7['moc_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc8['set_num']) ?>"><img src="<?php  print($data_moc8['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc9['set_num']) ?>"><img src="<?php  print($data_moc9['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc10['set_num']) ?>"><img src="<?php  print($data_moc10['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc11['set_num']) ?>"><img src="<?php  print($data_moc11['moc_img_url']);?>" alt=""></a>
-    </div><div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?moc=<?php print($data_moc12['set_num']) ?>"><img src="<?php  print($data_moc12['moc_img_url']);?>" alt=""></a>
-    </div>
- 
-
-
+  <?php for ($i = 1; $i < 13; $i++){
+                       //Databadse van rebrickable bevat mocs met nummers tussen 1000 & ongeveer 25 000
+                       $randNum = random_int (1000, 25000);
+                       //Check of resultaat in db zit op basis van de header (terug te vinden onder het 11e item)
+                       try {
+                   
+                       if(get_headers($url_moc . $randNum . $authkey)[11] == 'HTTP/1.1 200 OK'){
+                            //data ophalen
+                            $data_moc=json_decode(file_get_contents($url_moc . $randNum . $authkey), true);
+                            ?>
+                                <!-- html per item -->
+                              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+                                <a href="detail.php?moc=<?php print($data_moc['set_num']) ?>"><img src="<?php  print($data_moc['moc_img_url']);?>" alt=""></a>
+                              </div>
+                            <?php
+                       }else{
+                        $i--;
+                       }
+                      } catch (Exception $e) {
+                        echo 'Caught exception: ',  $e->getMessage(), "\n";
+                    }
+                       ?>
+                    <?php } ?>
   </div>
   <div class="link">
-<a href="moc.php">Klik hier voor alle mocs!</a>
+<a href="moc.php">Click here for all mocs!</a>
   </div>
 </div>
 <div class="container" id="moc" name="lego">
-  <h2>Lego</h2>
+  <h2 style="margin-bottom: 0;">Lego</h2>
   <div class="row">
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set1['set_num']); ?>"><img src="<?php  print($data_set1['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set2['set_num']); ?>"><img src="<?php  print($data_set2['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set3['set_num']); ?>"><img src="<?php  print($data_set3['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set4['set_num']); ?>"><img src="<?php  print($data_set4['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set5['set_num']); ?>"><img src="<?php  print($data_set5['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set6['set_num']); ?>"><img src="<?php  print($data_set6['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set7['set_num']); ?>"><img src="<?php  print($data_set7['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set8['set_num']); ?>"><img src="<?php  print($data_set8['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set9['set_num']); ?>"><img src="<?php  print($data_set9['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set10['set_num']); ?>"><img src="<?php  print($data_set10['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set11['set_num']); ?>"><img src="<?php  print($data_set11['set_img_url']);   ?>" alt=""></a>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
-    <a href="detail.php?nummer=<?php print($data_set12['set_num']); ?>"><img src="<?php  print($data_set12['set_img_url']);   ?>" alt=""></a>
-    </div>
-    
-    
- 
+  <?php for ($ii = 1; $ii < 13; $ii++){
+                       //Databadse van rebrickable bevat mocs met nummers tussen 1000 & ongeveer 25 000
+                       $randNum = random_int (1000, 15000);
+                       //Check of resultaat in db zit op basis van de header (terug te vinden onder het 11e item)
+                       try {
+                       if(get_headers($url_sets . $randNum. "-1" . $authkey)[11] == 'HTTP/1.1 200 OK'){
+                            //data ophalen
+                            $data_set=json_decode(file_get_contents($url_sets . $randNum ."-1" . $authkey), true);
+                            ?>
+                                <!-- html per item -->
+                              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+                                <a href="detail.php?nummer=<?php print($data_set['set_num']) ?>"><img src="<?php  print($data_set['set_img_url']);?>" alt=""></a>
+                              </div>
+                            <?php
 
-
+                       }else{
+                        $ii--;
+                       }
+                      } catch (Exception $e) {
+                        echo 'Caught exception: ',  $e->getMessage(), "\n";
+                    }
+                       ?>
+                    <?php } ?>
+   
   </div>
   <div class="link">
-<a href="lego.php">Klik hier voor alle legosets!</a>
+<a href="lego.php">Click here for the new legosets!</a>
   </div>
     
     
