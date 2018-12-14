@@ -43,7 +43,7 @@ $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
         
         $sql = "INSERT INTO  verlanglijst (userID,set_num,name,year,num_parts,img_url)"."VALUES('$userID','$set_num','$name','$year','$num_parts','$img_url')";
           if($mysqli->query($sql) == true){
-            header('location:index.php');
+            header('location:verlanglijst.php');
         
         }
     }

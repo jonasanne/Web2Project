@@ -42,7 +42,7 @@ $authkey = "?key=3058fe9f830ab53859bf5e7668abe35d";
         
         $sql = "INSERT INTO  user_lijst (userID,name,set_num,year,parts,img_url)"."VALUES('$userID','$name','$set_num','$year','$num_parts','$img_url')";
           if($mysqli->query($sql) == true){
-            header('location:index.php');
+            header('location:collection.php');
         
         }
     }

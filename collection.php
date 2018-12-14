@@ -45,7 +45,7 @@ $table = $result->fetch_assoc();
 <!-- html -->
 <div class="card-">
     <div class="top">
-  <a href="detail.php?moc= <?php print($set_num); ?> "><img class="card-img-top" src="<?php print($set_img); ?> " alt="Card image cap"></a>
+  <a href="detail.php?nummer=<?php print($set_num); ?> "><img class="card-img-top" src="<?php print($set_img); ?> " alt="Card image cap"></a>
   </div>
   <div class="card-body">
   <h5 class="card-title"><?php print($set_name); ?></h5>
